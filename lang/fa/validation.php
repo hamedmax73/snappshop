@@ -143,7 +143,8 @@ return array(
         "content" => "محتوا",
         "description" => "توضیحات",
         'receiver'  => 'مقصد',
-        'sender'    => 'مبدا'
+        'sender'    => 'مبدا',
+        'amount'    => 'مقدار'
 
     ),
 );

@@ -39,8 +39,18 @@ class CreditTransferRequest extends FormRequest
     public function rules()
     {
         return [
-            'receiver'   => ['required','numeric','digits:16',new PersianCreditCardNumber],
-            'sender'   => ['required','numeric','digits:16',new PersianCreditCardNumber],
+            'receiver'   => ['required','numeric','digits:16',new PersianCreditCardNumber,'exists:credit_card_numbers,card_number'],
+            'sender'   => ['required','numeric','digits:16',new PersianCreditCardNumber,'exists:credit_card_numbers,card_number'],
+            'amount'    => ['required','numeric','min:10000','max:500000000']
         ];
+    }
+    public function messages()
+    {
+        return [
+            '*.exists' => 'شماره کارت در این بانک موجود نیست',
+            'amount.min'    => 'حداقل مبلغ تراکنش ۱۰۰۰ تومان است',
+            'amount.max'    => 'حداکثر مبلغ تراکنش ۵۰ میلیون تومان است',
+        ];
+
     }
 }
