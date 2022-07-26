@@ -1,9 +1,11 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\User;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
+use function fake;
+use function now;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User\User>
@@ -20,8 +22,8 @@ class UserFactory extends Factory
 
         return [
             'name' => fake()->name(),
-            'email' => fake()->safeEmail(),
-            'phone' => fake()->phoneNumber(),
+            'email' => fake()->unique()->safeEmail(),
+            'phone' => fake()->unique()->phoneNumber(),
             'email_verified_at' => now(),
             'phone_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
