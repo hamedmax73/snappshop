@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('phone','15')->unique(); // based on twilio recommendation:  https://support.twilio.com/hc/en-us/articles/223183008-Formatting-International-Phone-Numbers
+            $table->timestamp('phone_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
