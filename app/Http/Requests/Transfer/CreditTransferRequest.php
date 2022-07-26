@@ -39,8 +39,8 @@ class CreditTransferRequest extends FormRequest
     public function rules()
     {
         return [
-            'receiver'   => ['required','numeric','digits:16',new PersianCreditCardNumber,'exists:credit_card_numbers,card_number'],
             'sender'   => ['required','numeric','digits:16',new PersianCreditCardNumber,'exists:credit_card_numbers,card_number'],
+            'receiver'   => ['different:sender','required','numeric','digits:16',new PersianCreditCardNumber,'exists:credit_card_numbers,card_number'],
             'amount'    => ['required','numeric','min:10000','max:500000000']
         ];
     }
