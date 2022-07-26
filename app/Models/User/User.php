@@ -50,7 +50,7 @@ class User extends Authenticatable
      * return user account numbers relationship
      * @return HasMany
      */
-    public function account_numbers(): HasMany
+    public function accountNumbers(): HasMany
     {
         return $this->hasMany(AccountNumber::class);
     }
