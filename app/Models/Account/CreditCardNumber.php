@@ -30,11 +30,11 @@ class CreditCardNumber extends Model
     //Relations ===========================================================
 
     /**
-     * return this credit card account number relationship
+     * return this credit card account relationship
      * @return BelongsTo
      */
-    public function accountNumber(): BelongsTo
+    public function account(): BelongsTo
     {
-        return $this->belongsTo(AccountNumber::class);
+        return $this->belongsTo(AccountNumber::class,'account_number_id');
     }
 }

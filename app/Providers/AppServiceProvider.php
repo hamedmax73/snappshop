@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Interfaces\BaseTransactionServiceInterface;
+use App\Services\TransactionService;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,6 +16,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        $this->app->bind(BaseTransactionServiceInterface::class,TransactionService::class);
     }
 
     /**

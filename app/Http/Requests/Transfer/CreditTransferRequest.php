@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests\Transfer;
 
+use App\Models\Transaction\Transaction;
 use App\Rules\PersianCreditCardNumber;
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -29,7 +30,7 @@ class CreditTransferRequest extends FormRequest
             'receiver' => (string)preg_replace('/\D/', '', $this->receiver),
             'sender' => (string)preg_replace('/\D/', '', $this->sender),
         ]);
-     }
+    }
 
     /**
      * Get the validation rules that apply to the request.
@@ -39,17 +40,18 @@ class CreditTransferRequest extends FormRequest
     public function rules()
     {
         return [
-            'sender'   => ['required','numeric','digits:16',new PersianCreditCardNumber,'exists:credit_card_numbers,card_number'],
-            'receiver'   => ['different:sender','required','numeric','digits:16',new PersianCreditCardNumber,'exists:credit_card_numbers,card_number'],
-            'amount'    => ['required','numeric','min:10000','max:500000000']
+            'sender' => ['required', 'numeric', 'digits:16', new PersianCreditCardNumber, 'exists:credit_card_numbers,card_number'],
+            'receiver' => ['different:sender', 'required', 'numeric', 'digits:16', new PersianCreditCardNumber, 'exists:credit_card_numbers,card_number'],
+            'amount' => ['required', 'numeric', 'min:' . Transaction::MINIMUM_TRANSACTION, 'max:' . Transaction::MAXIMUM_TRANSACTION]
         ];
     }
+
     public function messages()
     {
         return [
             '*.exists' => 'شماره کارت در این بانک موجود نیست',
-            'amount.min'    => 'حداقل مبلغ تراکنش ۱۰۰۰ تومان است',
-            'amount.max'    => 'حداکثر مبلغ تراکنش ۵۰ میلیون تومان است',
+            'amount.min' => 'حداقل مبلغ تراکنش ' . Transaction::MINIMUM_TRANSACTION . ' تومان است',
+            'amount.max' => 'حداکثر مبلغ تراکنش ' . Transaction::MAXIMUM_TRANSACTION . ' تومان است',
         ];
 
     }
