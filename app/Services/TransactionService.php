@@ -52,6 +52,7 @@ class TransactionService implements BaseTransactionServiceInterface
         }
         return throw new \Exception('حساب کاربری متعلق به این شماره کارت یافت نشد.');
     }
+
     /**
      * @throws \Exception
      */
@@ -84,7 +85,7 @@ class TransactionService implements BaseTransactionServiceInterface
         $receiver_account = $this->find_account($receiver_card);
 
         //save transaction for records
-        $transaction = $this->save_transaction($sender_card->id, $receiver_card->id, $amount, Transaction::STATUS_PENDING);
+        $transaction = $this->store_transaction($sender_card->id, $receiver_card->id, $amount, Transaction::STATUS_PENDING);
 
         //check sender has enough money
         $amount_with_fee = $amount + Transaction::TRANSACTION_FEE;
@@ -102,6 +103,7 @@ class TransactionService implements BaseTransactionServiceInterface
                 //increase balance from receiver
                 $this->change_account_balance($receiver_account->id, $receiver_account->balance + $amount);
                 //save fee details
+                $this->store_fee($transaction, Transaction::TRANSACTION_FEE);
 
                 //update transaction
                 $this->update_transaction($transaction->id, [
@@ -120,7 +122,7 @@ class TransactionService implements BaseTransactionServiceInterface
         }
     }
 
-    public function save_transaction($sender_card_id, $receiver_card_id, $amount, $status): mixed
+    public function store_transaction($sender_card_id, $receiver_card_id, $amount, $status): mixed
     {
         return $this->transactionRepository->create([
             'user_id' => '1',//this must be complete with auth
@@ -140,5 +142,12 @@ class TransactionService implements BaseTransactionServiceInterface
             return throw new \Exception('در بروزرسانی حساب با مشکل روبرو شدیم');
         }
         return true;
+    }
+
+    public function store_fee(Transaction $transaction, $fee)
+    {
+        return $transaction->fee()->create([
+            'fee' => $fee
+        ]);
     }
 }

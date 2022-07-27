@@ -6,6 +6,7 @@ use App\Models\Account\CreditCardNumber;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use JetBrains\PhpStorm\Pure;
 
@@ -78,5 +79,13 @@ class Transaction extends Model
     public function receiver(): BelongsTo
     {
         return $this->belongsTo(CreditCardNumber::class,'receiver_card_id');
+    }
+
+    /**
+     * @return HasOne
+     */
+    public function fee(): HasOne
+    {
+        return $this->hasOne(TransactionsFee::class);
     }
 }

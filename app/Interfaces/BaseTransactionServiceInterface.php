@@ -3,7 +3,9 @@
 namespace App\Interfaces;
 
 use App\Models\Account\CreditCardNumber;
+use App\Models\Transaction\Transaction;
 use App\Models\User\AccountNumber;
+use App\Repositories\Transaction\TransactionRepository;
 
 interface BaseTransactionServiceInterface
 {
@@ -39,7 +41,7 @@ interface BaseTransactionServiceInterface
      * @param $status
      * @return mixed
      */
-    public function save_transaction($sender_card_id, $receiver_card_id, $amount, $status): mixed;
+    public function store_transaction($sender_card_id, $receiver_card_id, $amount, $status): mixed;
 
     /**
      * update a translation with given data
@@ -73,5 +75,10 @@ interface BaseTransactionServiceInterface
      */
     public function change_account_balance($account_id,$new_balance): mixed;
 
-
+    /**
+     * @param Transaction $transaction
+     * @param $fee
+     * @return mixed
+     */
+    public function store_fee(Transaction $transaction,$fee);
 }
