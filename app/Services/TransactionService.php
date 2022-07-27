@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Exceptions\TransactionException;
 use App\Interfaces\BaseRepositoryInterface;
 use App\Interfaces\BaseTransactionServiceInterface;
 use App\Models\Account\CreditCardNumber;
@@ -10,7 +11,9 @@ use App\Models\User\AccountNumber;
 use App\Repositories\Account\CreditCardNumberRepository;
 use App\Repositories\Transaction\TransactionRepository;
 use App\Repositories\User\AccountNumberRepository;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
+use Symfony\Component\HttpFoundation\Response as ResponseAlias;
 
 class TransactionService implements BaseTransactionServiceInterface
 {
@@ -30,7 +33,7 @@ class TransactionService implements BaseTransactionServiceInterface
         if (!empty($credit_card) && !empty($credit_card->account)) {
             return (int)$credit_card->account->balance;
         }
-        return throw new \Exception('حساب کاربری متعلق به این شماره کارت یافت نشد.');
+        return throw new \Exception('حساب کاربری متعلق به این شماره کارت یافت نشد.', ResponseAlias::HTTP_UNPROCESSABLE_ENTITY);
     }
 
     /**
@@ -50,7 +53,7 @@ class TransactionService implements BaseTransactionServiceInterface
         if (!empty($credit_card_number) && !empty($credit_card_number->account)) {
             return $credit_card_number->account;
         }
-        return throw new \Exception('حساب کاربری متعلق به این شماره کارت یافت نشد.');
+        return throw new \Exception('حساب کاربری متعلق به این شماره کارت یافت نشد.', ResponseAlias::HTTP_UNPROCESSABLE_ENTITY);
     }
 
     /**
@@ -62,7 +65,7 @@ class TransactionService implements BaseTransactionServiceInterface
         if (!empty($credit_card)) {
             return $credit_card;
         }
-        return throw new \Exception('این شماره کارت معتبر نیست.');
+        return throw new \Exception('این شماره کارت معتبر نیست.', ResponseAlias::HTTP_UNPROCESSABLE_ENTITY);
     }
 
     public function change_account_balance($account_id, $new_balance): mixed
@@ -93,7 +96,7 @@ class TransactionService implements BaseTransactionServiceInterface
             $this->update_transaction($transaction->id, [
                 'status' => Transaction::STATUS_FAILED
             ]);
-            return throw new \Exception('موجودی حساب کافی نیست.');
+            return throw new \Exception('موجودی حساب کافی نیست.', ResponseAlias::HTTP_NOT_ACCEPTABLE);
         }
         try {
             DB::transaction(function () use ($transaction, $amount, $sender_account, $receiver_account, $amount_with_fee) {
@@ -110,7 +113,6 @@ class TransactionService implements BaseTransactionServiceInterface
                     'status' => Transaction::STATUS_SUCCESS
                 ]);
 
-
             }, 3);
             return $transaction->id;
         } catch (\Exception $e) {
@@ -118,7 +120,8 @@ class TransactionService implements BaseTransactionServiceInterface
             $this->update_transaction($transaction->id, [
                 'status' => Transaction::STATUS_FAILED
             ]);
-            return $e;
+            return throw new TransactionException($transaction->id, $e->getMessage(), $e->getCode());
+
         }
     }
 
@@ -139,7 +142,7 @@ class TransactionService implements BaseTransactionServiceInterface
     public function update_transaction($transaction_id, array $data): bool
     {
         if (!$this->transactionRepository->update($transaction_id, $data)) {
-            return throw new \Exception('در بروزرسانی حساب با مشکل روبرو شدیم');
+            return throw new TransactionException($transaction_id, 'در بروزرسانی حساب با مشکل روبرو شدیم', 500);
         }
         return true;
     }

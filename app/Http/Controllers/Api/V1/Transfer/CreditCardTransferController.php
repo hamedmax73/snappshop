@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api\V1\Transfer;
 
+use App\Exceptions\TransactionException;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Transfer\CreditTransferRequest;
 use App\Interfaces\BaseRepositoryInterface;
@@ -26,15 +27,21 @@ class CreditCardTransferController extends Controller
                 'message' => 'تراکنش با موفقیت انجام شد.',
                 'reference_id' => $result
             ];
-
             return response($message, 201);
+        } catch (TransactionException $e) {
+            $message = [
+                'success' => false,
+                'message' => $e->getMessage(),
+                'reference_id' => $e->transaction_id
+            ];
+            return response($message, $e->getCode());
         } catch (\Exception $e) {
             $message = [
                 'success' => false,
                 'message' => $e->getMessage(),
-                'reference_id' =>5 //todo: fix this
+                'reference_id' => null,
             ];
-            return response($message, 500);
+            return response($message,  $e->getCode());
         }
     }
 
