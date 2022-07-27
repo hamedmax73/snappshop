@@ -8,12 +8,12 @@ use Illuminate\Http\Request;
 
 class LastUserReportController extends Controller
 {
-    public function __construct(private BaseReportInterface $report_interface)
+    public function __construct(private BaseReportInterface $reportService)
     {
     }
 
     public function show()
     {
-        return $this->report_interface->last_transaction_with_users();
+        return $this->reportService->last_transaction_with_users();
     }
 }
