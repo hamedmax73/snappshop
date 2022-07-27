@@ -3,6 +3,7 @@
 namespace App\Models\User;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\Transaction\Transaction;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -46,6 +47,15 @@ class User extends Authenticatable
 
     //Relations ===========================================================
 
+
+    public function transactions(): HasMany
+    {
+        return $this->hasMany(Transaction::class);
+    }
+    public function latest_transactions(): HasMany
+    {
+        return $this->hasMany(Transaction::class)->latest()->limit(10);
+    }
     /**
      * return user account numbers relationship
      * @return HasMany

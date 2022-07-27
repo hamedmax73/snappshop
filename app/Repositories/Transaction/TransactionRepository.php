@@ -4,6 +4,8 @@ namespace App\Repositories\Transaction;
 
 use App\Interfaces\BaseRepositoryInterface;
 use App\Models\Transaction\Transaction;
+use App\Models\User\User;
+use Illuminate\Support\Facades\DB;
 
 class TransactionRepository implements BaseRepositoryInterface
 {
@@ -30,5 +32,25 @@ class TransactionRepository implements BaseRepositoryInterface
     public function deleteWhere($column, $value)
     {
         return Transaction::where($column, '=', $value)->delete();
+    }
+
+    /**
+     * return transaction with last time offset from now
+     * @param $time_offset
+     * @param null $limit
+     * @return mixed
+     */
+    public function get_recent_users_with_transactions($time_offset, $limit = null): mixed
+    {
+        $user_ids = Transaction::activityOlderThan($time_offset)
+            ->select('user_id', DB::raw('count(*) as total'))
+            ->groupBy('user_id')
+            ->limit($limit)
+            ->get()->pluck('user_id')->toArray();
+        $users = User::whereIn('id', $user_ids)->get();
+        foreach ($users as $user) {
+            $user->load('latest_transactions');
+        }
+        return $users;
     }
 }

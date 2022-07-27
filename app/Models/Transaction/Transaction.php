@@ -3,11 +3,13 @@
 namespace App\Models\Transaction;
 
 use App\Models\Account\CreditCardNumber;
+use App\Models\User\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Carbon;
 use JetBrains\PhpStorm\Pure;
 
 class Transaction extends Model
@@ -15,7 +17,7 @@ class Transaction extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $fillable=[
+    protected $fillable = [
         'user_id',
         'sender_card_id',
         'receiver_card_id',
@@ -28,10 +30,11 @@ class Transaction extends Model
     const STATUS_FAILED = 2;
     const STATUS_BLOCKED = 3;
 
-    const MINIMUM_TRANSACTION=10000; //UNIT:RIAL
-    const MAXIMUM_TRANSACTION=500000000; //UNIT:RIAL
+    const MINIMUM_TRANSACTION = 10000; //UNIT:RIAL
+    const MAXIMUM_TRANSACTION = 500000000; //UNIT:RIAL
     const TRANSACTION_FEE = 5000; // UNIT:RIAL
 
+    const HEARTBEAT_INTERVAL = 10; //unit:minute
 
     //Functions =========================================================
     /**
@@ -60,8 +63,26 @@ class Transaction extends Model
         return static::statusNameFor($this->status);
     }
 
+    //Scopes ===========================================================
+
+    /**
+     * Scope a query to older than some minutes
+     * @param $query
+     * @param $interval
+     * @return mixed
+     */
+    public function scopeActivityOlderThan($query, $interval): mixed
+    {
+        return $query->where('created_at', '>=', Carbon::now()->subMinutes($interval)->toDateTimeString());
+    }
+
 
     //Relations =========================================================
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 
     /**
      * return sender of this transaction
@@ -69,7 +90,7 @@ class Transaction extends Model
      */
     public function sender(): BelongsTo
     {
-        return $this->belongsTo(CreditCardNumber::class,'sender_card_id');
+        return $this->belongsTo(CreditCardNumber::class, 'sender_card_id');
     }
 
     /**
@@ -78,7 +99,7 @@ class Transaction extends Model
      */
     public function receiver(): BelongsTo
     {
-        return $this->belongsTo(CreditCardNumber::class,'receiver_card_id');
+        return $this->belongsTo(CreditCardNumber::class, 'receiver_card_id');
     }
 
     /**

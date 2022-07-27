@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\V1\Report\LastUserReportController;
 use App\Http\Controllers\Api\V1\Transfer\CreditCardTransferController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,9 +22,11 @@ Route::group(['prefix' => '/v1'], function (){
         return "pong";
     });
 
-
     //credit card transfer
     Route::post('/credit/transfer/store',[CreditCardTransferController::class,'store']);
+
+    //reports
+    Route::get('/reports/last_users',[LastUserReportController::class,'show']);
 
 
 });

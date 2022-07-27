@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Interfaces\BaseReportInterface;
 use App\Interfaces\BaseTransactionServiceInterface;
+use App\Services\ReportService;
 use App\Services\TransactionService;
 use Illuminate\Support\ServiceProvider;
 
@@ -17,6 +19,12 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         $this->app->bind(BaseTransactionServiceInterface::class,TransactionService::class);
+        $this->app->bind(BaseReportInterface::class,ReportService::class);
+
+        if ($this->app->environment('local')) {
+            $this->app->register(\Laravel\Telescope\TelescopeServiceProvider::class);
+            $this->app->register(TelescopeServiceProvider::class);
+        }
     }
 
     /**
