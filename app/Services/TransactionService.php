@@ -33,6 +33,9 @@ class TransactionService implements BaseTransactionServiceInterface
         return throw new \Exception('حساب کاربری متعلق به این شماره کارت یافت نشد.');
     }
 
+    /**
+     * @throws \Exception
+     */
     public function check_balance($card_number, $amount): bool
     {
         $current_balance = $this->get_balance($card_number);
