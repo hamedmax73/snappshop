@@ -33,8 +33,8 @@ interface BaseTransactionServiceInterface
 
     /**
      * save transaction in database
-     * @param $sender
-     * @param $receiver
+     * @param $sender_card_id
+     * @param $receiver_card_id
      * @param $amount
      * @param $status
      * @return mixed
