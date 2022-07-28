@@ -125,8 +125,8 @@ class TransactionService implements BaseTransactionServiceInterface
         }
         //todo: if you really want to send sms, you must config env first and then uncomment this lines
         //send notification for users
-        $sender_account->user->notify(new BalanceChanged('WITHDRAW',$amount));
-        $receiver_account->user->notify(new BalanceChanged('DEPOSIT',$amount));
+//        $sender_account->user->notify(new BalanceChanged('WITHDRAW',$amount));
+//        $receiver_account->user->notify(new BalanceChanged('DEPOSIT',$amount));
         return $transaction->id;
     }
 
