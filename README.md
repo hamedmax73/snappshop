@@ -3,6 +3,9 @@
 
 Project Testing Phase
 
+## SMS config
+
+in config/sms you can select your customize sms gateway
 
 ## API documentation
 
