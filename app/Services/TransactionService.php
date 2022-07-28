@@ -8,6 +8,7 @@ use App\Interfaces\BaseTransactionServiceInterface;
 use App\Models\Account\CreditCardNumber;
 use App\Models\Transaction\Transaction;
 use App\Models\User\AccountNumber;
+use App\Notifications\BalanceChanged;
 use App\Repositories\Account\CreditCardNumberRepository;
 use App\Repositories\Transaction\TransactionRepository;
 use App\Repositories\User\AccountNumberRepository;
@@ -114,15 +115,18 @@ class TransactionService implements BaseTransactionServiceInterface
                 ]);
 
             }, 3);
-            return $transaction->id;
+
         } catch (\Exception $e) {
             //update transaction
             $this->update_transaction($transaction->id, [
                 'status' => Transaction::STATUS_FAILED
             ]);
             return throw new TransactionException($transaction->id, $e->getMessage(), $e->getCode());
-
         }
+        //send notification for users
+//        $sender_account->user->notify(new BalanceChanged('WITHDRAW',$amount));
+//        $receiver_account->user->notify(new BalanceChanged('DEPOSIT',$amount));
+        return $transaction->id;
     }
 
     public function store_transaction($sender_card_id, $receiver_card_id, $amount, $status): mixed

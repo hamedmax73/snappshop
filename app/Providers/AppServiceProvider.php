@@ -4,7 +4,9 @@ namespace App\Providers;
 
 use App\Interfaces\BaseReportInterface;
 use App\Interfaces\BaseTransactionServiceInterface;
+use App\Interfaces\ShortMessageSenderGatewayInterface;
 use App\Services\ReportService;
+use App\Services\ShortMessageSenders\KavenegarGateway;
 use App\Services\TransactionService;
 use Illuminate\Support\ServiceProvider;
 
@@ -20,6 +22,7 @@ class AppServiceProvider extends ServiceProvider
         //
         $this->app->bind(BaseTransactionServiceInterface::class,TransactionService::class);
         $this->app->bind(BaseReportInterface::class,ReportService::class);
+        $this->app->bind(ShortMessageSenderGatewayInterface::class, config('sms.gateway'));
 
         if ($this->app->environment('local')) {
             $this->app->register(\Laravel\Telescope\TelescopeServiceProvider::class);
