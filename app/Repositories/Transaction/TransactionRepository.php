@@ -36,7 +36,7 @@ class TransactionRepository implements BaseRepositoryInterface
 
     /**
      * return transaction with last time offset from now
-     * @param $time_offset
+     * @param $time_offset | unit:minute
      * @param null $limit
      * @return mixed
      */
