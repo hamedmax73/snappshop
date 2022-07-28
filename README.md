@@ -5,7 +5,14 @@ Project Testing Phase
 
 ## SMS config
 
-in config/sms you can select your customize sms gateway
+In config/sms you can select your customize sms gateway
+
+Add into .env :
+```
+GHASEDAKAPI_KEY=something
+KAVENEGAR_KEY=something
+SMS_SENDER=09137691954
+```
 
 ## API documentation
 
@@ -13,4 +20,4 @@ You can use [documentation](https://documenter.getpostman.com/view/16995399/UzXN
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

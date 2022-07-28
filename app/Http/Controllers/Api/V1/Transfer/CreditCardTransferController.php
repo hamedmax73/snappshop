@@ -41,7 +41,9 @@ class CreditCardTransferController extends Controller
                 'message' => $e->getMessage(),
                 'reference_id' => null,
             ];
-            return response($message,  $e->getCode());
+            $error_code = $e->getCode();
+            if (empty($error_code) || $error_code == 0) $error_code = 500;
+            return response($message,$error_code);
         }
     }
 

@@ -51,6 +51,8 @@ class BalanceChanged extends Notification implements ShouldQueue
         } else {
             $message .= " از حساب شما برداشت شد";
         }
+        $message .= '\n';
+        $message .= 'بانک ملی اسنپ!'; // or config('app.name')
 
         return $message;
     }
