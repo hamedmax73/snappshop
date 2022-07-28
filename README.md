@@ -1,11 +1,12 @@
 
 ## About Project
 
-this project is for test
+Project Testing Phase
+
 
 ## API documentation
 
-You can use [documentation](https://documenter.getpostman.com/view/16995399/UzXNVd9a) 
+You can use [documentation](https://documenter.getpostman.com/view/16995399/UzXNVd9a) for API 
 
 ## License
 
