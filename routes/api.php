@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\Transcode\VideoTranscodeController;
 use App\Http\Controllers\Api\V1\Report\LastUserReportController;
 use App\Http\Controllers\Api\V1\Transfer\CreditCardTransferController;
 use Illuminate\Http\Request;
@@ -17,17 +18,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 //test application
-Route::group(['prefix' => '/v1'], function (){
-    Route::get('/ping', function(){
+Route::group(['prefix' => '/v1'], function () {
+    Route::get('/ping', function () {
         return "pong";
     });
 
     //credit card transfer
-    Route::post('/credit/transfer/store',[CreditCardTransferController::class,'store']);
+    Route::post('/credit/transfer/store', [CreditCardTransferController::class, 'store']);
 
     //reports
-    Route::get('/reports/last_users',[LastUserReportController::class,'show']);
+    Route::get('/reports/last_users', [LastUserReportController::class, 'show']);
 
+
+    Route::post('/video/store', [VideoTranscodeController::class, 'store']);
+    Route::get('/video/{transcode}/check', [VideoTranscodeController::class, 'check']);
+
+    Route::get('/video/{transcode}/upload_to_s3', [VideoTranscodeController::class, 'upload_to_s3']);
 
 });
 

@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -123,6 +123,8 @@ return [
 
     'key' => env('APP_KEY'),
 
+    'arvan_token' =>  'Apikey ' .env('ARVAN_TOKEN', null),
+    'arvan_channel_id' => env('ARVAN_CHANNEL_ID', null),
     'cipher' => 'AES-256-CBC',
 
     /*
