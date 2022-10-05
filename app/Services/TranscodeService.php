@@ -21,15 +21,28 @@ class TranscodeService
 
     public function create_new($request)
     {
+        $stream_data = $request->stream_data;
+
+        //get video url
+        if ($stream_data['disk'] == "s3_for_stream_render" || $stream_data['disk'] == "s3") {
+            $video_url = $stream_data['user_id'] . '/' . $stream_data['basename'];
+        }
+
+        //save new into database
         $created_video = Transcode::create([
-            'video_url' => $request->video_url,
-            'title' => $request->title,
-            'description' => $request->description,
-            'cover_time' => $request->cover_time,
+            'video_url' => $video_url,
+            'source_video_id' => $stream_data['id'],
+            'title' => $stream_data['title'],
+            'description' => $stream_data['creation_meta']['description'],
+            'cover_time' => $stream_data['creation_meta']['cover_time'],
             'channel_id' => $this->arvan_channel_id,
             'status' => 'storing',
+            'disk'  =>$stream_data['disk'],
+            'user_id'  =>$stream_data['user_id'],
         ]);
 
+
+        //create arvan storage data format
         $arvan_data = [
             'convert_info' => [],
             'convert_mode' => 'auto',
@@ -46,6 +59,7 @@ class TranscodeService
 
         ];
 
+        //create arvan api link
         $store_url = 'https://napi.arvancloud.com/vod/2.0/channels/' . $this->arvan_channel_id . '/videos';
 
         $response = Http::
@@ -100,13 +114,13 @@ class TranscodeService
      */
     public function upload_to_s3(Transcode $transcode)
     {
-        $hls_links =  $this->read_hls($transcode->hls_playlist);
+        $hls_links = $this->read_hls($transcode->hls_playlist);
 
         $jobs = collect();
         foreach ($hls_links as $link) {
             $jobs->push(new UploadFromLinkToS3($link));
         }
-        if($jobs->count() == 0) {
+        if ($jobs->count() == 0) {
             throw new \Exception('No jobs found to dispatch.');
         }
         Bus::chain($jobs)->onQueue('default')->dispatch();

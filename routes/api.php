@@ -28,15 +28,13 @@ Route::group(['prefix' => '/v1'], function () {
 
     //reports
     Route::get('/reports/last_users', [LastUserReportController::class, 'show']);
-
-
     Route::post('/video/store', [VideoTranscodeController::class, 'store']);
     Route::get('/video/{transcode}/check', [VideoTranscodeController::class, 'check']);
-
     Route::get('/video/{transcode}/upload_to_s3', [VideoTranscodeController::class, 'upload_to_s3']);
-
 });
 
+
+Route::post('/dispatcher/create', [VideoTranscodeController::class,'store']);
 
 //Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //    return $request->user();

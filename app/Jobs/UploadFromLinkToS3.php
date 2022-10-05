@@ -66,5 +66,7 @@ class UploadFromLinkToS3 implements ShouldQueue
             $filename,
             $response->getBody()
         );
+
+        $this->queueProgress(100);
     }
 }

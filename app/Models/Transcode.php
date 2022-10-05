@@ -22,5 +22,10 @@ class Transcode extends Model
         'thumbnail_url',
         'duration',
         'hls_playlist',
+        'creation_meta',
+        'disk',
+        'progress',
+        'user_id',
+        'source_video_id'
     ];
 }
