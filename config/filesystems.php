@@ -65,6 +65,15 @@ return [
             'endpoint' => env('S3_VOD_URL'),
             'visibility' => 'public',
         ],
+        's3_for_stream_render' => [
+            'driver'   => 's3',
+            'key'      => env('S3_STREAM_RENDER_ACCESS_KEY_ID'),
+            'secret'   => env('S3_STREAM_RENDER_SECRET_ACCESS_KEY'),
+            'region'   => env('S3_STREAM_RENDER_DEFAULT_REGION'),
+            'bucket'   => env('S3_STREAM_RENDER_BUCKET'),
+            'endpoint' => env('S3_STREAM_RENDER_URL'),
+            'visibility' => 'public',
+        ],
 
     ],
 

@@ -37,15 +37,19 @@ class UploadFromLinkToS3 implements ShouldQueue
 
 
     public $link_url;
+    public $source_video_id;
+    public $user_id;
 
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct($link)
+    public function __construct($link, $source_video_id, $user_id)
     {
         $this->link_url = $link;
+        $this->source_video_id = $source_video_id;
+        $this->user_id = $user_id;
     }
 
     /**
@@ -58,7 +62,7 @@ class UploadFromLinkToS3 implements ShouldQueue
 
         $diskTo = Storage::disk('s3_arvan');
         $info = pathinfo($this->link_url);
-        $filename = $info['basename'];
+        $filename = $this->user_id . "/" . $this->source_video_id . "/" . $info['basename'];
         $response = Http::withOptions([
             'synchronous' => true,
         ])->retry(3, 5000)->get($this->link_url);

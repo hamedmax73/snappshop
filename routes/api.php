@@ -29,8 +29,8 @@ Route::group(['prefix' => '/v1'], function () {
     //reports
     Route::get('/reports/last_users', [LastUserReportController::class, 'show']);
     Route::post('/video/store', [VideoTranscodeController::class, 'store']);
-    Route::get('/video/{transcode}/check', [VideoTranscodeController::class, 'check']);
-    Route::get('/video/{transcode}/upload_to_s3', [VideoTranscodeController::class, 'upload_to_s3']);
+    Route::get('/video/{transcode:source_video_id}/check', [VideoTranscodeController::class, 'check']);
+    Route::get('/video/{transcode:source_video_id}/upload_to_s3', [VideoTranscodeController::class, 'upload_to_s3']);
 });
 
 
