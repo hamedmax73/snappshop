@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\ArvanClient;
 use App\Jobs\UpdateMainServer;
 use App\Jobs\UploadFromLinkToS3;
 use App\Models\Transaction\Transaction;
@@ -14,6 +15,7 @@ use Illuminate\Support\Facades\Storage;
 
 class TranscodeService
 {
+    use ArvanClient;
 
     public function __construct(public $arvan_token = null, public $arvan_channel_id = null)
     {
@@ -32,14 +34,16 @@ class TranscodeService
 
 
         //get video url
-        if ($stream_data['disk'] == "s3_for_stream_render" || $stream_data['disk'] == "s3") {
-            $video_url = $stream_data['user_id'] . '/' . $stream_data['basename'];
-            $direct_video_url = Storage::disk('s3_for_stream_render')->url($video_url, now()->addHour());
-        }
+//        if ($stream_data['disk'] == "s3_for_stream_render" || $stream_data['disk'] == "s3") {
+//            $video_url = $stream_data['user_id'] . '/' . $stream_data['basename'];
+//            $direct_video_url = Storage::disk('s3_for_stream_render')->url($video_url, now()->addHour());
+//        }
+
+        $direct_video_url = $stream_data['creation_meta']['direct_link'];
 
         //save new into database
         $created_video = Transcode::create([
-            'video_url' => $video_url,
+            'video_url' => $direct_video_url,
             'source_video_id' => $stream_data['id'],
             'title' => $stream_data['title'],
             'description' => $stream_data['creation_meta']['description'],
@@ -70,25 +74,32 @@ class TranscodeService
         //create arvan api link
         $store_url = 'https://napi.arvancloud.com/vod/2.0/channels/' . $this->arvan_channel_id . '/videos';
 
-        $response = Http::
-        withHeaders([
-            'Authorization' => $this->arvan_token
-        ])
-            ->accept('application/json')
-            ->post($store_url, $arvan_data);
+        $response = $this->sendArvanRequest($store_url, $arvan_data, 'post');
+        if(!empty($response)){
+            //update created video
+            $created_video->update([
+                'video_id' => $response->data->id,
+                'status' => 'added_to_queue'
+            ]);
 
-        Log::info("sdasdas" . $response);
-        $response = json_decode($response);
-        //update created video
-        $created_video->update([
-            'video_id' => $response->data->id,
-            'status' => 'added_to_queue'
-        ]);
+            //update main server
+            $update_data = [
+                'status' => 'added_to_queue',
+            ];
+        }
+        else{
+            Log::info("22222: ".json_encode($response));
+            //update created video
+            $created_video->update([
+                'status' => 'fail'
+            ]);
 
-        //update main server
-        $update_data = [
-            'status' => 'added_to_queue',
-        ];
+            //update main server
+            $update_data = [
+                'status' => 'fail',
+            ];
+        }
+
         UpdateMainServer::dispatch($created_video->source_video_id, $update_data)->onQueue('main_server_updater');
 
 
@@ -98,37 +109,88 @@ class TranscodeService
 
     public function check_status(Transcode $transcode)
     {
+        $progress_data = [];
         $video_id = $transcode->video_id;
-
-        if(empty($video_id)){
-            return "video not added";
+        if (empty($video_id)) {
+            $this->makeTranscoderFail($transcode);
+            return false;
         }
-        $check_url = 'https://napi.arvancloud.com/vod/2.0/videos/' . $video_id;
-        $response = Http::
-        withHeaders([
-            'Authorization' => $this->arvan_token
-        ])
-            ->accept('application/json')
-            ->get($check_url);
+        $url = 'https://napi.arvancloud.com/vod/2.0/videos/' . $video_id;
+        $response = $this->sendArvanRequest($url, [], 'get');
 
-        $response = json_decode($response);
-        if ($response->data->status == "complete") {
-            $transcode->update([
-                'status' => $response->data->status,
-                'duration' => $response->data->file_info->general->duration,
-                'hls_playlist' => $response->data->hls_playlist,
-                'thumbnail_url' => $response->data->thumbnail_url,
-                'tooltip_url' => $response->data->tooltip_url,
-                'check_try' => DB::raw('check_try+1'),
-            ]);
+        if ($response === null) {
+            //mean video deleted
+            $status = 'deleted';
+        } elseif ($response === false) {
+            //mean we have error
+            $status = $transcode->status;
+            Log::info('arvan error for video id : ' . $video_id);
         } else {
-            $transcode->update([
-                'status' => $response->data->status,
-                'check_try' => DB::raw('check_try+1'),
-            ]);
+            //mean ok
+
+            Log::info(json_encode($response));
+            $status = $response?->data?->status ?? null;
+            var_dump("id: " . $transcode->id . "  = " . $status);
+            if ($status === "downloading" || $status === "converting") {
+                $job_status = $response->data->job_status_url;
+                try {
+                    $progress_data = \Http::retry('3', '400')->get($job_status);
+                    $progress_data = (json_decode($progress_data, true));
+                    $progress_data['percentage'] = $progress_data['progress'];
+                    var_dump('progress: ' . $progress_data['percentage']);
+                    $transcode->progress = json_encode($progress_data);
+                } catch (\Exception $e) {
+                    var_dump('cant get progress');
+                    $progress_data['percentage'] = 0;
+                }
+
+                if ($status === 'converting') {
+                    $update_data['filesize'] = $response?->data?->file_info?->general?->size ?? 0;
+                    $update_data['duration'] = $response?->data?->file_info?->general?->duration ?? 0;
+                    var_dump('size: ' . $update_data['filesize']);
+                }
+            }
+            if ($status === "complete") {
+                $transcode->update([
+                    'duration' => $response->data->file_info->general->duration,
+                    'hls_playlist' => $response->data->hls_playlist,
+                    'thumbnail_url' => $response->data->thumbnail_url,
+                    'tooltip_url' => $response->data->tooltip_url,
+                ]);
+                $update_data['filesize'] = $response?->data?->file_info?->general?->size ?? 0;
+                $update_data['duration'] = $response?->data?->file_info?->general?->duration ?? 0;
+                $progress_data['percentage'] = '100';
+
+                //upload into s3
+                $this->upload_to_s3($transcode);
+                $status = 'uploading_into_s3';
+
+            }
+
         }
+
+        $transcode->status = $status;
+        //update main server
+        $update_data['status'] = $status;
+        $update_data['progress'] = $progress_data;
+
+        UpdateMainServer::dispatch($transcode->source_video_id, $update_data)->onQueue('main_server_updater');
+        $transcode->check_try++;
+        $transcode->save();
 
         return $response;
+    }
+
+    private function makeTranscoderFail(mixed $transcode)
+    {
+        $transcode->status = 'fail';
+        $transcode->save();
+
+        $update_data = [
+            'status' => 'fail',
+        ];
+        UpdateMainServer::dispatch($transcode->source_video_id, $update_data)->onQueue('main_server_updater');
+
     }
 
     /**
@@ -140,9 +202,18 @@ class TranscodeService
         $user_id = $transcode->user_id;
         $hls_links = $this->read_hls($transcode->hls_playlist);
         $jobs = collect();
+
+        //make video ready to play
+        $update_data = [
+            'status' => 'ready_to_play',
+            'disk' => 's3_vod'
+        ];
+        UpdateMainServer::dispatch($transcode->source_video_id, $update_data)->onQueue('main_server_updater');
+
         foreach ($hls_links as $link) {
-            $jobs->push(new UploadFromLinkToS3($link,$source_video_id,$user_id));
+            $jobs->push(new UploadFromLinkToS3($link, $source_video_id, $user_id));
         }
+        $jobs->push(new UpdateMainServer($source_video_id, $update_data));
         if ($jobs->count() == 0) {
             throw new \Exception('No jobs found to dispatch.');
         }
@@ -153,7 +224,7 @@ class TranscodeService
             'check_try' => DB::raw('check_try+1'),
         ]);
 
-        return "ok";
+        return true;
 
     }
 
