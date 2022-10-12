@@ -17,23 +17,23 @@ class UploadFromLinkToS3 implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
     use IsMonitored;
 
-    public $tries = 5;
+    public $tries = 3;
     /**
      * The number of seconds the job can run before timing out.
      *
      * @var int
      */
-    public $timeout = 600;
-
-    /**
-     * Determine the time at which the job should timeout.
-     *
-     * @return \DateTime
-     */
-    public function retryUntil()
-    {
-        return now()->addMinutes(10);
-    }
+    public $timeout = 100;
+//
+//    /**
+//     * Determine the time at which the job should timeout.
+//     *
+//     * @return \DateTime
+//     */
+//    public function retryUntil()
+//    {
+//        return now()->addMinutes(10);
+//    }
 
 
     public $link_url;
@@ -59,13 +59,14 @@ class UploadFromLinkToS3 implements ShouldQueue
      */
     public function handle()
     {
-
+        var_dump($this->link_url);
         $diskTo = Storage::disk('s3_arvan');
         $info = pathinfo($this->link_url);
         $filename = $this->user_id . "/" . $this->source_video_id . "/" . $info['basename'];
         $response = Http::withOptions([
             'synchronous' => true,
-        ])->retry(3, 5000)->get($this->link_url);
+        ])->retry(3, 500)
+            ->timeout(20)->get($this->link_url);
         $diskTo->put(
             $filename,
             $response->getBody()

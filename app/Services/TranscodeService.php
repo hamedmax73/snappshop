@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\ArvanClient;
 use App\Jobs\UpdateMainServer;
+use App\Jobs\UpdateTrasncode;
 use App\Jobs\UploadFromLinkToS3;
 use App\Models\Transaction\Transaction;
 use App\Models\Transcode;
@@ -12,6 +13,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class TranscodeService
 {
@@ -159,7 +161,7 @@ class TranscodeService
                 ]);
                 $update_data['filesize'] = $response?->data?->file_info?->general?->size ?? 0;
                 $update_data['duration'] = $response?->data?->file_info?->general?->duration ?? 0;
-                $progress_data['percentage'] = '100';
+                $progress_data['percentage'] = '90';
 
                 //upload into s3
                 $this->upload_to_s3($transcode);
@@ -208,11 +210,20 @@ class TranscodeService
             'status' => 'ready_to_play',
             'disk' => 's3_vod'
         ];
-        UpdateMainServer::dispatch($transcode->source_video_id, $update_data)->onQueue('main_server_updater');
+//        UpdateMainServer::dispatch($transcode->source_video_id, $update_data)->onQueue('main_server_updater');
 
+
+
+        //
         foreach ($hls_links as $link) {
+            //skip some links from bus
+            if(Str::endsWith($link,['tooltip.vtt','tooltip.png'])){
+                UploadFromLinkToS3::dispatch($link, $source_video_id, $user_id);
+                continue;
+            }
             $jobs->push(new UploadFromLinkToS3($link, $source_video_id, $user_id));
         }
+        $jobs->push(new UpdateTrasncode($transcode,$update_data));
         $jobs->push(new UpdateMainServer($source_video_id, $update_data));
         if ($jobs->count() == 0) {
             throw new \Exception('No jobs found to dispatch.');

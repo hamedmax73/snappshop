@@ -38,7 +38,7 @@ class CheckTranscoders extends Command
     {
         $progress_data = [];
         $update_data = [];
-        $transcoders = Transcode::whereNotIn('status', ['complete', 'fail','downloading_fail', 'uploading_into_s3', 'deleted'])->where([
+        $transcoders = Transcode::whereNotIn('status', ['complete', 'fail','downloading_fail', 'uploading_into_s3', 'deleted','ready_to_play'])->where([
             ['check_try', "<", '40'],
         ])
             ->orderBy('created_at', 'desc')
