@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\ArvanClient;
 use App\Jobs\UpdateMainServer;
-use App\Jobs\UpdateTrasncode;
+use App\Jobs\UpdateTranscode;
 use App\Jobs\UploadFromLinkToS3;
 use App\Models\Transaction\Transaction;
 use App\Models\Transcode;
@@ -223,7 +223,8 @@ class TranscodeService
             }
             $jobs->push(new UploadFromLinkToS3($link, $source_video_id, $user_id));
         }
-        $jobs->push(new UpdateTrasncode($transcode,$update_data));
+        $jobs->push(new UpdateTranscode($transcode,$update_data));
+        $update_data['progress'] = "100";
         $jobs->push(new UpdateMainServer($source_video_id, $update_data));
         if ($jobs->count() == 0) {
             throw new \Exception('No jobs found to dispatch.');
