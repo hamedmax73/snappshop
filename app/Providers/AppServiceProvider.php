@@ -25,8 +25,8 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(ShortMessageSenderGatewayInterface::class, config('sms.gateway'));
 
         if ($this->app->environment('local')) {
-            $this->app->register(\Laravel\Telescope\TelescopeServiceProvider::class);
-            $this->app->register(TelescopeServiceProvider::class);
+        //    $this->app->register(\Laravel\Telescope\TelescopeServiceProvider::class);
+          //  $this->app->register(TelescopeServiceProvider::class);
         }
     }
 
