@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\ArvanClient;
+use App\Jobs\DownloadWithXargs;
 use App\Jobs\UpdateMainServer;
 use App\Jobs\UpdateTranscode;
 use App\Jobs\UploadFromLinkToS3;
@@ -104,8 +105,6 @@ class TranscodeService
 
         UpdateMainServer::dispatch($created_video->source_video_id, $update_data)->onQueue('main_server_updater');
 
-
-        dd($response);
         return $response;
     }
 
@@ -164,7 +163,8 @@ class TranscodeService
                 $progress_data['percentage'] = '90';
 
                 //upload into s3
-                $this->upload_to_s3($transcode);
+                $this->dupload_video_s3($transcode);
+//                $this->upload_to_s3($transcode);
                 $status = 'uploading_into_s3';
 
             }
@@ -193,6 +193,12 @@ class TranscodeService
         ];
         UpdateMainServer::dispatch($transcode->source_video_id, $update_data)->onQueue('main_server_updater');
 
+    }
+
+    public function dupload_video_s3(Transcode $transcode)
+    {
+        $hls_links = $this->read_hls($transcode->hls_playlist);
+        DownloadWithXargs::dispatch($transcode,$hls_links)->onQueue('qq');
     }
 
     /**
@@ -275,7 +281,12 @@ class TranscodeService
 
     private function read_m3u8_video_segment($url, $first = false, $number = null)
     {
-        $m3u8 = file_get_contents($url);
+//        $m3u8 = file_get_contents($url);
+        $m3u8 = Http::withOptions([
+            'synchronous' => true,
+        ])->retry(3, 500)
+            ->timeout(20)->get($url)->body();
+//        dd($m3u8);
         if (strlen($m3u8) > 3) {
             $tmp = strrpos($url, '/');
             if ($tmp !== false) {
