@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\ArvanClient;
+use App\Jobs\DownloadWithXargs;
 use App\Jobs\UpdateMainServer;
 use App\Jobs\UpdateTranscode;
 use App\Jobs\UploadFromLinkToS3;
@@ -77,7 +78,7 @@ class TranscodeService
         $store_url = 'https://napi.arvancloud.com/vod/2.0/channels/' . $this->arvan_channel_id . '/videos';
 
         $response = $this->sendArvanRequest($store_url, $arvan_data, 'post');
-        if(!empty($response)){
+        if (!empty($response)) {
             //update created video
             $created_video->update([
                 'video_id' => $response->data->id,
@@ -88,9 +89,8 @@ class TranscodeService
             $update_data = [
                 'status' => 'added_to_queue',
             ];
-        }
-        else{
-            Log::info("22222: ".json_encode($response));
+        } else {
+            Log::info("22222: " . json_encode($response));
             //update created video
             $created_video->update([
                 'status' => 'fail'
@@ -104,8 +104,6 @@ class TranscodeService
 
         UpdateMainServer::dispatch($created_video->source_video_id, $update_data)->onQueue('main_server_updater');
 
-
-        dd($response);
         return $response;
     }
 
@@ -164,7 +162,8 @@ class TranscodeService
                 $progress_data['percentage'] = '90';
 
                 //upload into s3
-                $this->upload_to_s3($transcode);
+                $this->dupload_video_s3($transcode);
+//                $this->upload_to_s3($transcode);
                 $status = 'uploading_into_s3';
 
             }
@@ -195,6 +194,12 @@ class TranscodeService
 
     }
 
+    public function dupload_video_s3(Transcode $transcode)
+    {
+        $hls_links = $this->read_hls($transcode->hls_playlist);
+        DownloadWithXargs::dispatch($transcode, $hls_links);
+    }
+
     /**
      * @throws \Exception
      */
@@ -213,17 +218,16 @@ class TranscodeService
 //        UpdateMainServer::dispatch($transcode->source_video_id, $update_data)->onQueue('main_server_updater');
 
 
-
         //
         foreach ($hls_links as $link) {
             //skip some links from bus
-            if(Str::endsWith($link,['tooltip.vtt','tooltip.png'])){
+            if (Str::endsWith($link, ['tooltip.vtt', 'tooltip.png'])) {
                 UploadFromLinkToS3::dispatch($link, $source_video_id, $user_id);
                 continue;
             }
             $jobs->push(new UploadFromLinkToS3($link, $source_video_id, $user_id));
         }
-        $jobs->push(new UpdateTranscode($transcode,$update_data));
+        $jobs->push(new UpdateTranscode($transcode, $update_data));
         $update_data['progress'] = "100";
         $jobs->push(new UpdateMainServer($source_video_id, $update_data));
         if ($jobs->count() == 0) {
@@ -275,7 +279,12 @@ class TranscodeService
 
     private function read_m3u8_video_segment($url, $first = false, $number = null)
     {
-        $m3u8 = file_get_contents($url);
+//        $m3u8 = file_get_contents($url);
+        $m3u8 = Http::withOptions([
+            'synchronous' => true,
+        ])->retry(3, 500)
+            ->timeout(20)->get($url)->body();
+//        dd($m3u8);
         if (strlen($m3u8) > 3) {
             $tmp = strrpos($url, '/');
             if ($tmp !== false) {
