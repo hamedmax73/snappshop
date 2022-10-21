@@ -59,7 +59,7 @@ class DownloadWithXargs implements ShouldQueue
         $this->queueProgress(50);
         if ($result) {
             $result = $duploadService->downloadFiles();
-            UploadWiths5cmd::dispatch($this->transcode)->onQueue('qq');
+            UploadWiths5cmd::dispatch($this->transcode);
             $this->queueProgress(100);
             return true;
         }

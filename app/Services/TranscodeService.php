@@ -78,7 +78,7 @@ class TranscodeService
         $store_url = 'https://napi.arvancloud.com/vod/2.0/channels/' . $this->arvan_channel_id . '/videos';
 
         $response = $this->sendArvanRequest($store_url, $arvan_data, 'post');
-        if(!empty($response)){
+        if (!empty($response)) {
             //update created video
             $created_video->update([
                 'video_id' => $response->data->id,
@@ -89,9 +89,8 @@ class TranscodeService
             $update_data = [
                 'status' => 'added_to_queue',
             ];
-        }
-        else{
-            Log::info("22222: ".json_encode($response));
+        } else {
+            Log::info("22222: " . json_encode($response));
             //update created video
             $created_video->update([
                 'status' => 'fail'
@@ -198,7 +197,7 @@ class TranscodeService
     public function dupload_video_s3(Transcode $transcode)
     {
         $hls_links = $this->read_hls($transcode->hls_playlist);
-        DownloadWithXargs::dispatch($transcode,$hls_links)->onQueue('qq');
+        DownloadWithXargs::dispatch($transcode, $hls_links);
     }
 
     /**
@@ -219,17 +218,16 @@ class TranscodeService
 //        UpdateMainServer::dispatch($transcode->source_video_id, $update_data)->onQueue('main_server_updater');
 
 
-
         //
         foreach ($hls_links as $link) {
             //skip some links from bus
-            if(Str::endsWith($link,['tooltip.vtt','tooltip.png'])){
+            if (Str::endsWith($link, ['tooltip.vtt', 'tooltip.png'])) {
                 UploadFromLinkToS3::dispatch($link, $source_video_id, $user_id);
                 continue;
             }
             $jobs->push(new UploadFromLinkToS3($link, $source_video_id, $user_id));
         }
-        $jobs->push(new UpdateTranscode($transcode,$update_data));
+        $jobs->push(new UpdateTranscode($transcode, $update_data));
         $update_data['progress'] = "100";
         $jobs->push(new UpdateMainServer($source_video_id, $update_data));
         if ($jobs->count() == 0) {
