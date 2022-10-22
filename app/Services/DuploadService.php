@@ -96,7 +96,8 @@ class DuploadService
         $files_directory = $path . "/" . $video_id;
         var_dump($files_directory);
         $commands = [
-            'echo h1475h | sudo -S /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.com sync --size-only ' . $files_directory . '  s3://karbafubuket1'
+	
+		"sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.com sync --size-only " . $files_directory . '  s3://karbafubuket1'
         ];
         $command = implode(';', $commands);
         $process = Process::fromShellCommandline($command);
