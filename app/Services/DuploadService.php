@@ -39,15 +39,17 @@ class DuploadService
         return implode("\n", $links);
     }
 
-    public function saveInDisk($video_id, $links)
+    public function saveInDisk($video_id, $links,$user_id)
     {
         $path = base_path() . '/public';
-        var_dump($path);
+        var_dump($user_id);
         $this->setVideoId($video_id);
         $video_id = $this->getVideoId();
         $URLs = $this->linkText($links);
         $commands = [
             'cd ' . $path,
+		'mkdir ' . $user_id,
+		'cd ' . $user_id,
             'mkdir ' . $video_id,
             'cd ' . $video_id,
             'rm -f list.txt',
@@ -67,13 +69,14 @@ class DuploadService
         return true;
     }
 
-    public function downloadFiles()
+    public function downloadFiles($user_id)
     {
         $path = base_path() . '/public';
         var_dump($path);
         $video_id = $this->getVideoId();
         $commands = [
             'cd ' . $path,
+		'cd ' . $user_id,
             'cd ' . $video_id,
             'xargs -n 1 -P 0 curl -s -O < list.txt'
         ];
@@ -90,14 +93,13 @@ class DuploadService
         return true;
     }
 
-    public function syncFiles($video_id)
+    public function syncFiles($video_id,$user_id)
     {
         $path = base_path() . '/public';
-        $files_directory = $path . "/" . $video_id;
+        $files_directory = $path . "/" . $user_id;
         var_dump($files_directory);
         $commands = [
-	
-		"sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.com sync --size-only " . $files_directory . '  s3://karbafubuket1'
+		"sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.com sync --size-only " . $files_directory . '  s3://karbafubuket1',
         ];
         $command = implode(';', $commands);
         $process = Process::fromShellCommandline($command);
@@ -111,10 +113,10 @@ class DuploadService
         return true;
     }
 
-    public function removeFiles($video_id)
+    public function removeFiles($user_id)
     {
         $path = base_path() . '/public';
-        $files_directory = $path . "/" . $video_id;
+        $files_directory = $path . "/" . $user_id;
         $commands = [
             'rm -f -r ' . $files_directory .'/',
         ];

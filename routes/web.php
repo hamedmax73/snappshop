@@ -25,11 +25,12 @@ Route::get('/test', function (\App\Services\DuploadService $duploadService) {
         'https://utkarafarini.ir/upload/uploads/timesheetML.pdf',
         'https://utkarafarini.ir/upload/uploads/timesheetSM.pdf'
     ];
-    $result = $duploadService->SaveInDisk('dasdasd', $links);
+	$hamed = "hamed";
+    $result = $duploadService->SaveInDisk('dasdasd', $links,$hamed);
     if ($result) {
-        $result = $duploadService->downloadFiles();
-        $result2 = $duploadService->syncFiles('dasdasd');
-        $duploadService->removeFiles('dasdasd');
+        $result = $duploadService->downloadFiles($hamed);
+        $result2 = $duploadService->syncFiles('dasdasd',$hamed);
+        $duploadService->removeFiles($hamed);
         return $result2;
     }
     return "error";

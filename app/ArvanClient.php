@@ -16,6 +16,7 @@ trait ArvanClient
                 'Authorization' => $arvan_token
             ])
                 ->retry('3', '400')
+                ->timeout('100')
                 ->accept('application/json')
                 ->$method($url, $data);
 

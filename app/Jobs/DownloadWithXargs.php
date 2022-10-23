@@ -55,10 +55,10 @@ class DownloadWithXargs implements ShouldQueue
         $this->queueProgress(0);
         $source_video_id = $this->transcode->source_video_id;
         $user_id = $this->transcode->user_id;
-        $result = $duploadService->SaveInDisk($source_video_id, $this->links);
+        $result = $duploadService->SaveInDisk($source_video_id, $this->links,$user_id);
         $this->queueProgress(50);
         if ($result) {
-            $result = $duploadService->downloadFiles();
+            $result = $duploadService->downloadFiles($user_id);
             UploadWiths5cmd::dispatch($this->transcode);
             $this->queueProgress(100);
             return true;
