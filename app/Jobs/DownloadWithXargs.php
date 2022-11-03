@@ -11,6 +11,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\Middleware\WithoutOverlapping;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Carbon;
 use romanzipp\QueueMonitor\Traits\IsMonitored;
 
 class DownloadWithXargs implements ShouldQueue
@@ -54,12 +55,14 @@ class DownloadWithXargs implements ShouldQueue
         $duploadService = new DuploadService();
         $this->queueProgress(0);
         $source_video_id = $this->transcode->source_video_id;
+        var_dump('setp 1');
         $user_id = $this->transcode->user_id;
-        $result = $duploadService->SaveInDisk($source_video_id, $this->links,$user_id);
+        $result = $duploadService->saveInDisk($this->transcode, $source_video_id, $user_id);
+        var_dump('step 2');
         $this->queueProgress(50);
         if ($result) {
             $result = $duploadService->downloadFiles($user_id);
-            UploadWiths5cmd::dispatch($this->transcode);
+            UploadWiths5cmd::dispatch($this->transcode)->delay(Carbon::now()->addSeconds(15));
             $this->queueProgress(100);
             return true;
         }

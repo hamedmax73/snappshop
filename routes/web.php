@@ -1,5 +1,7 @@
 <?php
 
+use App\Jobs\DownloadWithXargs;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,17 +23,18 @@ Route::get('/', function () {
 });
 
 Route::get('/test', function (\App\Services\DuploadService $duploadService) {
-    $links = [
-        'https://utkarafarini.ir/upload/uploads/timesheetML.pdf',
-        'https://utkarafarini.ir/upload/uploads/timesheetSM.pdf'
-    ];
-	$hamed = "hamed";
-    $result = $duploadService->SaveInDisk('dasdasd', $links,$hamed);
-    if ($result) {
-        $result = $duploadService->downloadFiles($hamed);
-        $result2 = $duploadService->syncFiles('dasdasd',$hamed);
-        $duploadService->removeFiles($hamed);
-        return $result2;
-    }
+
+    $trans = \App\Models\Transcode::where('source_video_id','6b5eab89-1f1b-4582-b542-416f74083236')->first();
+    $user = $trans->user_id;
+
+    DownloadWithXargs::dispatch($trans, null);
+//    $result = $duploadService->saveInDisk($trans,'6b5eab89-1f1b-4582-b542-416f74083236', $user);
+//
+//    if ($result) {
+//        $result = $duploadService->downloadFiles($hamed);
+//        $result2 = $duploadService->syncFiles('dasdasd',$hamed);
+//        $duploadService->removeFiles($hamed);
+//        return $result2;
+//    }
     return "error";
 });

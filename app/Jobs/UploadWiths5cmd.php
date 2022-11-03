@@ -60,7 +60,7 @@ class UploadWiths5cmd implements ShouldQueue
         $result = $duploadService->syncFiles($source_video_id,$user_id);
         if ($result) {
             $this->queueProgress(50);
-            $duploadService->removeFiles($user_id);
+            $duploadService->removeFiles($user_id,$source_video_id);
             //make video ready to play
             $update_data = [
                 'status' => 'ready_to_play',

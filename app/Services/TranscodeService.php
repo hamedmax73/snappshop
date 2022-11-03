@@ -4,17 +4,20 @@ namespace App\Services;
 
 use App\ArvanClient;
 use App\Jobs\DownloadWithXargs;
+use App\Jobs\SendIntoStreamProvider;
 use App\Jobs\UpdateMainServer;
 use App\Jobs\UpdateTranscode;
 use App\Jobs\UploadFromLinkToS3;
 use App\Models\Transaction\Transaction;
 use App\Models\Transcode;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use PHPUnit\Exception;
 
 class TranscodeService
 {
@@ -57,54 +60,8 @@ class TranscodeService
             'user_id' => $stream_data['user_id'],
         ]);
 
-
-        //create arvan storage data format
-        $arvan_data = [
-            'convert_info' => [],
-            'convert_mode' => 'auto',
-            'coverTime' => [
-                'hour' => '0',
-                'minute' => '0',
-                'second' => $created_video->cover_time
-            ],
-            'description' => $created_video->description,
-            'parallel_convert' => false,
-            'thumbnail_time' => $created_video->cover_time,
-            'title' => $created_video->title,
-            'video_url' => $direct_video_url,
-        ];
-
-        //create arvan api link
-        $store_url = 'https://napi.arvancloud.com/vod/2.0/channels/' . $this->arvan_channel_id . '/videos';
-
-        $response = $this->sendArvanRequest($store_url, $arvan_data, 'post');
-        if (!empty($response)) {
-            //update created video
-            $created_video->update([
-                'video_id' => $response->data->id,
-                'status' => 'added_to_queue'
-            ]);
-
-            //update main server
-            $update_data = [
-                'status' => 'added_to_queue',
-            ];
-        } else {
-            Log::info("22222: " . json_encode($response));
-            //update created video
-            $created_video->update([
-                'status' => 'fail'
-            ]);
-
-            //update main server
-            $update_data = [
-                'status' => 'fail',
-            ];
-        }
-
-        UpdateMainServer::dispatch($created_video->source_video_id, $update_data)->onQueue('main_server_updater');
-
-        return $response;
+        SendIntoStreamProvider::dispatch($created_video, $this->arvan_token, $this->arvan_channel_id);
+        return $created_video;
     }
 
     public function check_status(Transcode $transcode)
@@ -116,7 +73,12 @@ class TranscodeService
             return false;
         }
         $url = 'https://napi.arvancloud.com/vod/2.0/videos/' . $video_id;
-        $response = $this->sendArvanRequest($url, [], 'get');
+        try {
+            $response = $this->sendArvanRequest($url, [], 'get');
+        } catch (\Exception $e) {
+            $this->makeTranscoderFail($transcode);
+            return false;
+        }
 
         if ($response === null) {
             //mean video deleted
@@ -162,7 +124,7 @@ class TranscodeService
                 $progress_data['percentage'] = '90';
 
                 //upload into s3
-                $this->dupload_video_s3($transcode);
+                $this->dupload_video_s3($transcode,$response->data->file_info->general->duration);
 //                $this->upload_to_s3($transcode);
                 $status = 'uploading_into_s3';
 
@@ -194,10 +156,16 @@ class TranscodeService
 
     }
 
-    public function dupload_video_s3(Transcode $transcode)
+    public function dupload_video_s3(Transcode $transcode,$duration)
     {
-        $hls_links = $this->read_hls($transcode->hls_playlist);
-        DownloadWithXargs::dispatch($transcode, $hls_links);
+        try {
+            $duration_in_minute = ((int)$duration/60);
+            $timeout = 60 + round($duration_in_minute*0.02*60,0);
+            DownloadWithXargs::dispatch($transcode, null)->delay(Carbon::now()->addSeconds($timeout));
+        } catch (Exception $e) {
+            $this->makeTranscoderFail($transcode);
+            return false;
+        }
     }
 
     /**
