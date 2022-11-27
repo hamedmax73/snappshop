@@ -24,10 +24,14 @@ Route::get('/', function () {
 
 Route::get('/test', function (\App\Services\DuploadService $duploadService) {
 
-    $trans = \App\Models\Transcode::where('source_video_id','6b5eab89-1f1b-4582-b542-416f74083236')->first();
-    $user = $trans->user_id;
-
-    DownloadWithXargs::dispatch($trans, null);
+    $arvan_nodes = config('nodes.arvan');
+    $node_size = sizeof($arvan_nodes);
+    $selected_node = rand(0,$node_size-1);
+    return $arvan_nodes[$selected_node]['apikey'];
+//    $trans = \App\Models\Transcode::where('source_video_id','6b5eab89-1f1b-4582-b542-416f74083236')->first();
+//    $user = $trans->user_id;
+//
+//    DownloadWithXargs::dispatch($trans, null);
 //    $result = $duploadService->saveInDisk($trans,'6b5eab89-1f1b-4582-b542-416f74083236', $user);
 //
 //    if ($result) {

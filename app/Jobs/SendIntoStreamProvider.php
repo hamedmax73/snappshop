@@ -47,12 +47,14 @@ class SendIntoStreamProvider implements ShouldQueue
         $this->queueProgress(0);
         //first download real file from link
         $path = base_path() . '/public/temp_video';
-        $temp_folder = "temp_" . $this->transcode->source_video_id;
+        $temp_folder = "temp_" . $this->transcode->user_id;
         $commands = [
             'cd ' . $path,
             'rm -rf ' . $temp_folder,
             'mkdir ' . $temp_folder,
             'cd ' . $temp_folder,
+            'mkdir '. $this->transcode->source_video_id,
+            'cd '. $this->transcode->source_video_id,
             'aria2c -x 16 -s 16 -o video.mp4 ' . $this->transcode->video_url,
         ];
         $command = implode(' && ', $commands);

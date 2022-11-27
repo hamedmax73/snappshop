@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Transcode;
 use App\Services\TranscodeService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 
 class VideoTranscodeController extends Controller

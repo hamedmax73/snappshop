@@ -23,10 +23,12 @@ class TranscodeService
 {
     use ArvanClient;
 
-    public function __construct(public $arvan_token = null, public $arvan_channel_id = null)
+    public function __construct(public $arvan_token = null, public $arvan_channel_id = null,public $node_name = null)
     {
-        $this->arvan_token = config('app.arvan_token');
-        $this->arvan_channel_id = config('app.arvan_channel_id');
+        $node = $this->select_node();
+        $this->arvan_token = $node['apikey'];
+        $this->arvan_channel_id = $node['channel_id'];
+        $this->node_name = $node['name'];
     }
 
 
@@ -34,16 +36,6 @@ class TranscodeService
     {
         $stream_data = $request->stream_data;
         Log::info(json_encode($stream_data));
-
-//        dd('sfsd');
-//        $stream_data = json_decode(' {"id":"ee8ce58b-f103-4926-8653-72c1d7959109","user_id":"b4bf2b5f-77e5-4c87-8990-42fb7d054fcc","node_id":null,"parent_id":null,"basename":"1bNaoPZGjuR5.mp4","title":"test for watermakr","original_name":"introamanj","mimetype":"video\/mp4","filesize":"900150","duration":null,"type":"video","disk":"s3_for_stream_render","creation_meta":{"description":"test","cover_time":"3","watermark":"https:\/\/amanjfile.test","watermark_position":["left","bottom"],"watermark_offset":0,"temporary_watermark":false},"converted_for_downloading_at":null,"converted_for_streaming_at":null,"status":"dispatcher","progress":null,"deleted_at":null,"created_at":"2022-10-07T11:13:08.000000Z","updated_at":"2022-10-07T11:13:13.000000Z"}', true);
-
-
-        //get video url
-//        if ($stream_data['disk'] == "s3_for_stream_render" || $stream_data['disk'] == "s3") {
-//            $video_url = $stream_data['user_id'] . '/' . $stream_data['basename'];
-//            $direct_video_url = Storage::disk('s3_for_stream_render')->url($video_url, now()->addHour());
-//        }
 
         $direct_video_url = $stream_data['creation_meta']['direct_link'];
 
@@ -160,7 +152,7 @@ class TranscodeService
     {
         try {
             $duration_in_minute = ((int)$duration/60);
-            $timeout = 60 + round($duration_in_minute*0.02*60,0);
+            $timeout = 90 + round($duration_in_minute*0.01*60,0);
             DownloadWithXargs::dispatch($transcode, null)->delay(Carbon::now()->addSeconds($timeout));
         } catch (Exception $e) {
             $this->makeTranscoderFail($transcode);
@@ -309,6 +301,14 @@ class TranscodeService
 //        }
 
 
+    }
+
+    private function select_node()
+    {
+        $arvan_nodes = config('nodes.arvan');
+        $node_size = sizeof($arvan_nodes);
+        $selected_node = rand(0,$node_size-1);
+        return $arvan_nodes[$selected_node];
     }
 
 }
