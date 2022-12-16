@@ -27,6 +27,7 @@ trait ArvanClient
 
             Log::info("arvan responce: " . $response);
             if ($response->successful()) {
+                Log::info('arvan send data resut: ' . json_encode($response));
                 return json_decode($response);
             }
 
@@ -49,5 +50,6 @@ trait ArvanClient
             return false;
         }
 
+        return false;
     }
 }

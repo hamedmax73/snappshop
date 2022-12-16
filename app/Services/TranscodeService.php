@@ -23,7 +23,7 @@ class TranscodeService
 {
     use ArvanClient;
 
-    public function __construct(public $arvan_token = null, public $arvan_channel_id = null,public $node_name = null)
+    public function __construct(public $arvan_token = null, public $arvan_channel_id = null, public $node_name = null)
     {
         $node = $this->select_node();
         $this->arvan_token = $node['apikey'];
@@ -36,8 +36,15 @@ class TranscodeService
     {
         $stream_data = $request->stream_data;
         Log::info(json_encode($stream_data));
+        $need_download = false;
+        if ($stream_data['disk'] == "s3_for_stream_render") {
+            $basic_s3_path = $stream_data['user_id'] . "/" . $stream_data['id'] . "/" . "video.mp4";
+            $direct_video_url = Storage::disk('s3_for_stream_render')->url($basic_s3_path);
+        } else {
+            $need_download = true;
+            $direct_video_url = $stream_data['creation_meta']['direct_link'];
+        }
 
-        $direct_video_url = $stream_data['creation_meta']['direct_link'];
 
         //save new into database
         $created_video = Transcode::create([
@@ -51,8 +58,9 @@ class TranscodeService
             'disk' => $stream_data['disk'],
             'user_id' => $stream_data['user_id'],
         ]);
+        Log::info("need dl : " . ($need_download == true ? 1 : 0));
 
-        SendIntoStreamProvider::dispatch($created_video, $this->arvan_token, $this->arvan_channel_id);
+        SendIntoStreamProvider::dispatch($created_video, $this->arvan_token, $this->arvan_channel_id, $need_download);
         return $created_video;
     }
 
@@ -116,7 +124,7 @@ class TranscodeService
                 $progress_data['percentage'] = '90';
 
                 //upload into s3
-                $this->dupload_video_s3($transcode,$response->data->file_info->general->duration);
+                $this->dupload_video_s3($transcode, $response->data->file_info->general->duration);
 //                $this->upload_to_s3($transcode);
                 $status = 'uploading_into_s3';
 
@@ -148,11 +156,11 @@ class TranscodeService
 
     }
 
-    public function dupload_video_s3(Transcode $transcode,$duration)
+    public function dupload_video_s3(Transcode $transcode, $duration)
     {
         try {
-            $duration_in_minute = ((int)$duration/60);
-            $timeout = 90 + round($duration_in_minute*0.01*60,0);
+            $duration_in_minute = ((int)$duration / 60);
+            $timeout = 90 + round($duration_in_minute * 0.01 * 60, 0);
             DownloadWithXargs::dispatch($transcode, null)->delay(Carbon::now()->addSeconds($timeout));
         } catch (Exception $e) {
             $this->makeTranscoderFail($transcode);
@@ -307,7 +315,8 @@ class TranscodeService
     {
         $arvan_nodes = config('nodes.arvan');
         $node_size = sizeof($arvan_nodes);
-        $selected_node = rand(0,$node_size-1);
+        $selected_node = rand(0, $node_size - 1);
+        $selected_node = 0;
         return $arvan_nodes[$selected_node];
     }
 
