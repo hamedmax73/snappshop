@@ -103,9 +103,17 @@ class DuploadService
         return $result;
     }
 
+    /**
+     *  create hls URL list text and save it into disk
+     * @param $transcode
+     * @param $video_id
+     * @param $user_id
+     * @return bool|ProcessFailedException
+     */
     public function saveInDisk($transcode, $video_id, $user_id)
     {
         $path = base_path() . '/public/';
+        $video_storage_path = $user_id . '/' . $video_id . "/";
         var_dump($user_id);
         $this->setVideoId($video_id);
         $video_id = $this->getVideoId();
@@ -115,11 +123,9 @@ class DuploadService
         $URLs = $this->linkText($hls_links);
         $commands = [
             'cd ' . $path,
-            'rm -rf ' . $user_id,
-            'mkdir ' . $user_id,
-            'cd ' . $user_id,
-            'mkdir ' . $video_id,
-            'cd ' . $video_id,
+            'rm -rf ' . $video_storage_path,
+            'mkdir -p ' . $video_storage_path,
+            'cd ' . $video_storage_path,
             'rm -f list.txt',
 //            'touch list.txt',
 //            'chmod 777 list.txt'
@@ -135,12 +141,17 @@ class DuploadService
             return new ProcessFailedException($process);
         }
         //add url into text file
-        $fp = fopen($path . $user_id . '/' . $video_id . '/' . "list.txt", "wb");
+        $fp = fopen($path . $video_storage_path . "list.txt", "wb");
         fwrite($fp, $URLs);
         fclose($fp);
         return true;
     }
 
+    /**
+     * read list of hls URLs and download theme and save into disk
+     * @param $user_id
+     * @return bool
+     */
     public function downloadFiles($user_id)
     {
         $path = base_path() . '/public';
@@ -168,19 +179,13 @@ class DuploadService
     public function syncFiles($video_id, $user_id)
     {
         $path = base_path() . '/public';
-        $files_directory = $path . "/" . $user_id;
-        $temp_video_url = $path . '/' . 'temp_video' .'/'."temp_" . $user_id;
+        $files_directory = $path . "/" . $user_id . "/" . $video_id . "/";
+//        $temp_video_url = $path . '/' . 'temp_video' .'/'."temp_" . $user_id;
         var_dump($files_directory);
-
-//        $commands = [
-//            'sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.com sync --size-only --exclude "*.m3u8"  --exclude "*.key" --acl "public-read"  ' . $files_directory . '  s3://karbafubuket1',
-//            'sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.com sync --size-only  --acl "private" ' . $files_directory . '  s3://karbafubuket1',
-//            "sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.com sync --size-only " . $temp_video_url . '  s3://karbafubuket1',
-//        ];
 
         //first upload public files
         $commands = [
-            'sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.com sync --size-only --exclude "*.m3u8"  --exclude "*.key" --acl "public-read"  ' . $files_directory . '  s3://karbafubuket1',
+            'sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.ir sync --size-only --exclude "*.m3u8"  --exclude "*.key" --acl "public-read"  ' . $files_directory . '  s3://karbafubuket1/' . $user_id . "/" . $video_id . "/",
         ];
         $command = implode(';', $commands);
         $process = Process::fromShellCommandline($command);
@@ -194,7 +199,7 @@ class DuploadService
 
         //second upload privates
         $commands = [
-            'sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.com sync --size-only  --acl "private" ' . $files_directory . '  s3://karbafubuket1',
+            'sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.ir sync --size-only  --acl "private" ' . $files_directory . '  s3://karbafubuket1' . $user_id . "/" . $video_id . "/",
         ];
         $command = implode(';', $commands);
         $process = Process::fromShellCommandline($command);
@@ -206,31 +211,33 @@ class DuploadService
         }
 
         //third upload main video
-        $commands = [
-            "sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.com sync --size-only " . $temp_video_url . '  s3://karbafubuket1',
-        ];
-        $command = implode(';', $commands);
-        $process = Process::fromShellCommandline($command);
-        $process->setTimeout(3600);
-        $process->run(null, ['ENV_VAR_NAME' => 'value']);
-        // executes after the command finishes
-        if (!$process->isSuccessful()) {
-            throw new ProcessFailedException($process);
-        }
+        // for now we skip this becase we upload video directly in main admin panel
+//        $commands = [
+//            "sudo /root/s5cmd --endpoint-url=https://s3.ir-thr-at1.arvanstorage.ir sync --size-only " . $temp_video_url . '  s3://karbafubuket1',
+//        ];
+//        $command = implode(';', $commands);
+//        $process = Process::fromShellCommandline($command);
+//        $process->setTimeout(3600);
+//        $process->run(null, ['ENV_VAR_NAME' => 'value']);
+//        // executes after the command finishes
+//        if (!$process->isSuccessful()) {
+//            throw new ProcessFailedException($process);
+//        }
 
 
         return true;
     }
 
-    public function removeFiles($user_id,$source_video_id)
+    public function removeFiles($user_id, $source_video_id)
     {
         $path = base_path() . '/public';
-        $temp_folder = $path . '/temp_video/'. "temp_" . $user_id;
-        Log::info($temp_folder);
-        $files_directory = $path . "/" . $user_id;
+//        $temp_folder = $path . '/temp_video/'. "temp_" . $user_id;
+
+        $files_directory = $path . "/" . $user_id . "/" . $source_video_id;
+        Log::info($files_directory);
         $commands = [
-            'rm -f -r ' . $files_directory . '/',
-            'rm -f -r ' . $temp_folder .'/',
+            // 'rm -f -r ' . $files_directory . '/',
+            'rm -f -r ' . $files_directory,
         ];
         $command = implode(';', $commands);
         $process = Process::fromShellCommandline($command);
@@ -239,9 +246,10 @@ class DuploadService
 
         // executes after the command finishes
         if (!$process->isSuccessful()) {
+
             return new ProcessFailedException($process);
         }
-//        return $process->getOutput();
+
         return true;
     }
 }

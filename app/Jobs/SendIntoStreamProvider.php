@@ -3,6 +3,7 @@
 namespace App\Jobs;
 
 use App\ArvanClient;
+use Carbon\Carbon;
 use Exception;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
@@ -25,19 +26,21 @@ class SendIntoStreamProvider implements ShouldQueue
     public $arvan_token;
     public $arvan_channel_id;
     public $need_download;
+    public $watermark_url;
 
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct($transcode, $arvan_token, $arvan_channel_id, $need_download = false)
+    public function __construct($transcode, $arvan_token, $arvan_channel_id, $need_download = false, $watermark_url)
     {
         $this->main_server = config('app.app_main_server');
         $this->transcode = $transcode;
         $this->arvan_token = $arvan_token;
         $this->arvan_channel_id = $arvan_channel_id;
         $this->need_download = $need_download;
+        $this->watermark_url = $watermark_url;
     }
 
     /**
@@ -49,17 +52,15 @@ class SendIntoStreamProvider implements ShouldQueue
     {
         $this->queueProgress(0);
         if ($this->need_download) {
-
+            //if we need download file
             //first download real file from link
             $path = base_path() . '/public/temp_video';
-            $temp_folder = "temp_" . $this->transcode->user_id;
+            $temp_folder = "temp_" . $this->transcode->user_id . "/" . $this->transcode->source_video_id;
             $commands = [
                 'cd ' . $path,
                 'rm -rf ' . $temp_folder,
-                'mkdir ' . $temp_folder,
+                'mkdir -p ' . $temp_folder,
                 'cd ' . $temp_folder,
-                'mkdir ' . $this->transcode->source_video_id,
-                'cd ' . $this->transcode->source_video_id,
                 'aria2c -x 16 -s 16 -o video.mp4 ' . $this->transcode->video_url,
             ];
             $command = implode(' && ', $commands);
@@ -83,6 +84,16 @@ class SendIntoStreamProvider implements ShouldQueue
             $video_direct_url = Storage::disk($this->transcode->disk)->url($basic_s3_path);
         }
         $this->queueProgress(50);
+
+        //send into arvan
+        $this->sendVideoToArvan($video_direct_url);
+
+        $this->queueProgress(100);
+
+    }
+
+    private function sendVideoToArvan($video_direct_url)
+    {
         //create arvan storage data format
         $arvan_data = [
             'convert_info' => [],
@@ -98,6 +109,14 @@ class SendIntoStreamProvider implements ShouldQueue
             'title' => $this->transcode->title,
             'video_url' => $video_direct_url,
         ];
+        $watermark_url = $this->watermark_url;
+        Log::info('watermarkurl : ' . $watermark_url);
+        if (!empty($watermark_url)) {
+            $watermark_id = $this->findOrCreateWatermark($watermark_url);
+            $arvan_data['watermark_id'] = $watermark_id;
+            $arvan_data['watermark_area'] = 'CENTER';
+
+        }
 
         //create arvan api link
         $store_url = 'https://napi.arvancloud.ir/vod/2.0/channels/' . $this->arvan_channel_id . '/videos';
@@ -127,7 +146,36 @@ class SendIntoStreamProvider implements ShouldQueue
             ];
             $this->fail();
         }
-        $this->queueProgress(100);
         UpdateMainServer::dispatch($this->transcode->source_video_id, $update_data)->onQueue('main_server_updater');
+    }
+
+    private function findOrCreateWatermark($watermark_url)
+    {
+
+        //find watermark
+        $data = [
+            'filter' => $watermark_url,
+        ];
+        $url = 'https://napi.arvancloud.ir/vod/2.0/channels/' . $this->arvan_channel_id . '/watermarks';
+        $response = $this->sendArvanRequest($url, $data, 'get');
+        if (isset($response->data[0])) {
+            return $response->data[0]->id;
+        }
+
+        ///save new watermark
+        $data = [
+            'title' => $watermark_url,
+            'description' => Carbon::now(),
+        ];
+        $file = [
+            'watermark',
+            file_get_contents($watermark_url),
+            'image.png'
+        ];
+        $response = $this->sendArvanRequest($url, $data, 'post', $file);
+        //for arvan bag
+        sleep(30);
+        return $response->data->id;
+
     }
 }

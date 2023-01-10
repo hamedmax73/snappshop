@@ -11,6 +11,9 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\Middleware\WithoutOverlapping;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Log;
+use PHPUnit\Exception;
 use romanzipp\QueueMonitor\Traits\IsMonitored;
 
 class UploadWiths5cmd implements ShouldQueue
@@ -61,6 +64,7 @@ class UploadWiths5cmd implements ShouldQueue
         if ($result) {
             $this->queueProgress(50);
             $duploadService->removeFiles($user_id,$source_video_id);
+
             //make video ready to play
             $update_data = [
                 'status' => 'ready_to_play',
@@ -68,9 +72,24 @@ class UploadWiths5cmd implements ShouldQueue
             ];
             UpdateMainServer::dispatch($this->transcode->source_video_id, $update_data)->onQueue('main_server_updater');
             $this->queueProgress(100);
+            $this->runCleanerAfterSuccess();
             return true;
         }
         $this->fail($result);
         return false;
+    }
+
+    /**
+     * remove video after completely success. we wait two day for safety
+     * @return void
+     */
+    public function runCleanerAfterSuccess(): void
+    {
+        try {
+            $timeout = 48;
+            RemoveFromArvanAndLocal::dispatch($this->transcode, null)->delay(Carbon::now()->addHours($timeout));
+        } catch (Exception $e) {
+            Log::critical('we can not remove some video after success:' . $this->transcode->id);
+        }
     }
 }

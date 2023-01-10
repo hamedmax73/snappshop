@@ -7,27 +7,28 @@ use Illuminate\Support\Facades\Log;
 
 trait ArvanClient
 {
-    public function sendArvanRequest($url, $data, $method = 'post')
+    public function sendArvanRequest($url, $data, $method = 'post', $file = null)
     {
-        $arvan_token = config('app.arvan_token');
-
         Log::info('arvan send url: ' . json_encode($url));
-        Log::info('arvan send toekn: ' . json_encode($arvan_token));
+        Log::info('arvan send token: ' . json_encode($this->arvan_token));
         Log::info('arvan send data: ' . json_encode($data));
         try {
-
-            $response = Http::
+            $client = Http::
             withHeaders([
-                'Authorization' => $arvan_token
+                'Authorization' => "APIKEY ".$this->arvan_token
             ])
                 ->retry('3', '400')
-                ->timeout('100')
-                ->accept('application/json')
+                ->timeout('100');
+            if (!empty($file)) {
+                $client->attach(...$file);
+            }
+            $response = $client->accept('application/json')
                 ->$method($url, $data);
+
 
             Log::info("arvan responce: " . $response);
             if ($response->successful()) {
-                Log::info('arvan send data resut: ' . json_encode($response));
+                Log::info('arvan send data resut: ' . json_encode($response->body()));
                 return json_decode($response);
             }
 

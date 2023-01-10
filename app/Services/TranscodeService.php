@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\ArvanClient;
 use App\Jobs\DownloadWithXargs;
+use App\Jobs\RemoveFromArvanAndLocal;
 use App\Jobs\SendIntoStreamProvider;
 use App\Jobs\UpdateMainServer;
 use App\Jobs\UpdateTranscode;
@@ -22,18 +23,17 @@ use PHPUnit\Exception;
 class TranscodeService
 {
     use ArvanClient;
+    public $arvan_token = null;
+    public $arvan_channel_id = null;
+    public $node_name = null;
 
-    public function __construct(public $arvan_token = null, public $arvan_channel_id = null, public $node_name = null)
+    public function create_new($request)
     {
         $node = $this->select_node();
         $this->arvan_token = $node['apikey'];
         $this->arvan_channel_id = $node['channel_id'];
         $this->node_name = $node['name'];
-    }
 
-
-    public function create_new($request)
-    {
         $stream_data = $request->stream_data;
         Log::info(json_encode($stream_data));
         $need_download = false;
@@ -54,25 +54,28 @@ class TranscodeService
             'description' => $stream_data['creation_meta']['description'],
             'cover_time' => $stream_data['creation_meta']['cover_time'],
             'channel_id' => $this->arvan_channel_id,
+            'channel_token' => $this->arvan_token,
             'status' => 'storing',
             'disk' => $stream_data['disk'],
             'user_id' => $stream_data['user_id'],
         ]);
         Log::info("need dl : " . ($need_download == true ? 1 : 0));
 
-        SendIntoStreamProvider::dispatch($created_video, $this->arvan_token, $this->arvan_channel_id, $need_download);
+        SendIntoStreamProvider::dispatch($created_video, $this->arvan_token, $this->arvan_channel_id, $need_download, $stream_data['creation_meta']['watermark']);
         return $created_video;
     }
 
     public function check_status(Transcode $transcode)
     {
         $progress_data = [];
-        $video_id = $transcode->video_id;
-        if (empty($video_id)) {
+
+        if (empty($transcode?->video_id)) {
             $this->makeTranscoderFail($transcode);
             return false;
         }
-        $url = 'https://napi.arvancloud.com/vod/2.0/videos/' . $video_id;
+        $this->arvan_token = $transcode->channel_token;
+        $video_id = $transcode->video_id;
+        $url = 'https://napi.arvancloud.ir/vod/2.0/videos/' . $video_id;
         try {
             $response = $this->sendArvanRequest($url, [], 'get');
         } catch (\Exception $e) {
@@ -113,11 +116,9 @@ class TranscodeService
                 }
             }
             if ($status === "complete") {
+                //mean video ready for transfer
                 $transcode->update([
                     'duration' => $response->data->file_info->general->duration,
-                    'hls_playlist' => $response->data->hls_playlist,
-                    'thumbnail_url' => $response->data->thumbnail_url,
-                    'tooltip_url' => $response->data->tooltip_url,
                 ]);
                 $update_data['filesize'] = $response?->data?->file_info?->general?->size ?? 0;
                 $update_data['duration'] = $response?->data?->file_info?->general?->duration ?? 0;
@@ -144,6 +145,51 @@ class TranscodeService
         return $response;
     }
 
+
+    public function delete(Transcode $transcode)
+    {
+        if (!empty($transcode?->video_id)) {
+            $video_id = $transcode->video_id;
+            $url = 'https://napi.arvancloud.ir/vod/2.0/videos/' . $video_id;
+            try {
+                $this->arvan_token = $transcode->channel_token;
+                $response = $this->sendArvanRequest($url, [], 'delete');
+            } catch (\Exception $e) {
+                $this->makeTranscoderFail($transcode);
+                return false;
+            }
+
+            if ($response === null) {
+                //mean video deleted
+                $status = 'deletedFN';
+            } elseif ($response === false) {
+                //mean we have error
+                $status = 'error';
+                Log::info('arvan error for video id and can not delete video : ' . $video_id);
+            }
+
+            //every thing is ok. so delete from local storage
+            $duploadService = new DuploadService();
+            $source_video_id = $transcode->source_video_id;
+            $user_id = $transcode->user_id;
+            $result = $duploadService->removeFiles($user_id, $source_video_id);
+            if ($result) {
+                $status = 'deleted';
+            } else {
+                $status = 'errorFN';
+            }
+        } else {
+            $status = 'errorFN';
+        }
+        $transcode->status = $status;
+        //update main server
+        $update_data['status'] = $status;
+
+        UpdateMainServer::dispatch($transcode->source_video_id, $update_data)->onQueue('main_server_updater');
+        $transcode->save();
+        return $response;
+    }
+
     private function makeTranscoderFail(mixed $transcode)
     {
         $transcode->status = 'fail';
@@ -167,6 +213,8 @@ class TranscodeService
             return false;
         }
     }
+
+
 
     /**
      * @throws \Exception

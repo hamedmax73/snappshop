@@ -3265,3 +3265,4731 @@
   2022-12-16 15:01:45 App\Jobs\UpdateMainServer ............. 15,262.55ms DONE
   2022-12-16 15:03:51 App\Jobs\UpdateMainServer ............. 15,325.73ms DONE
   2022-12-16 15:04:06 App\Jobs\UpdateMainServer ............. 15,252.34ms DONE
+  2022-12-16 15:05:58 App\Jobs\UpdateMainServer ............. 15,466.73ms DONE
+  2022-12-16 15:06:13 App\Jobs\UpdateMainServer ............. 15,293.91ms DONE
+  2022-12-16 15:06:29 App\Jobs\UpdateMainServer ............. 15,307.44ms DONE
+  2022-12-16 15:10:02 App\Jobs\UpdateMainServer ............. 15,308.30ms DONE
+  2022-12-16 15:10:18 App\Jobs\UpdateMainServer ............. 15,389.87ms DONE
+  2022-12-16 15:12:03 App\Jobs\UpdateMainServer ............. 15,249.87ms DONE
+  2022-12-16 15:12:24 App\Jobs\UpdateMainServer ............. 15,335.08ms DONE
+  2022-12-16 15:14:04 App\Jobs\UpdateMainServer ............. 15,306.80ms DONE
+  2022-12-16 15:14:19 App\Jobs\UpdateMainServer ............. 15,307.03ms DONE
+  2022-12-16 15:14:35 App\Jobs\UpdateMainServer ............. 15,253.16ms DONE
+  2022-12-16 15:16:08 App\Jobs\UpdateMainServer ............. 15,376.35ms DONE
+  2022-12-16 15:16:23 App\Jobs\UpdateMainServer ............. 15,376.96ms DONE
+  2022-12-16 15:18:24 App\Jobs\UpdateMainServer ............. 15,313.44ms DONE
+  2022-12-16 15:18:39 App\Jobs\UpdateMainServer ............. 15,230.55ms DONE
+  2022-12-16 15:18:54 App\Jobs\UpdateMainServer ............. 15,310.37ms DONE
+  2022-12-16 15:19:10 App\Jobs\UpdateMainServer ............. 15,223.90ms DONE
+  2022-12-16 15:22:40 App\Jobs\UpdateMainServer ............. 15,303.24ms DONE
+  2022-12-16 15:22:56 App\Jobs\UpdateMainServer ............. 15,262.47ms DONE
+  2022-12-16 15:24:44 App\Jobs\UpdateMainServer ............. 15,328.92ms DONE
+  2022-12-16 15:24:59 App\Jobs\UpdateMainServer ............. 15,257.06ms DONE
+  2022-12-16 15:25:15 App\Jobs\UpdateMainServer ............. 15,297.37ms DONE
+  2022-12-16 15:26:51 App\Jobs\UpdateMainServer ............. 15,324.71ms DONE
+  2022-12-16 15:27:06 App\Jobs\UpdateMainServer ............. 15,230.17ms DONE
+  2022-12-16 15:28:55 App\Jobs\UpdateMainServer ............. 15,309.58ms DONE
+  2022-12-16 15:29:10 App\Jobs\UpdateMainServer ............. 15,331.37ms DONE
+  2022-12-16 15:31:08 App\Jobs\UpdateMainServer ............. 15,327.87ms DONE
+  2022-12-16 15:31:23 App\Jobs\UpdateMainServer ............. 15,232.76ms DONE
+  2022-12-16 15:33:11 App\Jobs\UpdateMainServer ............. 15,338.62ms DONE
+  2022-12-16 15:33:27 App\Jobs\UpdateMainServer ............. 15,275.23ms DONE
+  2022-12-16 15:35:21 App\Jobs\UpdateMainServer ............. 15,330.63ms DONE
+  2022-12-16 15:35:36 App\Jobs\UpdateMainServer ............. 15,230.35ms DONE
+  2022-12-16 15:35:52 App\Jobs\UpdateMainServer ............. 15,261.34ms DONE
+  2022-12-16 15:37:28 App\Jobs\UpdateMainServer ............. 15,320.98ms DONE
+  2022-12-16 15:37:43 App\Jobs\UpdateMainServer ............. 15,210.66ms DONE
+  2022-12-16 15:37:59 App\Jobs\UpdateMainServer ............. 15,343.28ms DONE
+  2022-12-16 15:41:32 App\Jobs\UpdateMainServer ............. 15,378.14ms DONE
+  2022-12-16 15:41:48 App\Jobs\UpdateMainServer ............. 15,259.75ms DONE
+  2022-12-16 15:43:39 App\Jobs\UpdateMainServer ............. 15,306.86ms DONE
+  2022-12-16 15:43:54 App\Jobs\UpdateMainServer ............. 15,238.09ms DONE
+  2022-12-16 15:44:10 App\Jobs\UpdateMainServer ............. 15,288.35ms DONE
+  2022-12-16 15:44:25 App\Jobs\UpdateMainServer ............. 15,226.47ms DONE
+  2022-12-16 15:45:43 App\Jobs\UpdateMainServer ............. 15,302.80ms DONE
+  2022-12-16 15:47:50 App\Jobs\UpdateMainServer ............. 20,411.98ms DONE
+  2022-12-16 15:49:55 App\Jobs\UpdateMainServer ............. 15,295.05ms DONE
+  2022-12-16 15:50:10 App\Jobs\UpdateMainServer ............. 15,235.91ms DONE
+  2022-12-16 15:50:26 App\Jobs\UpdateMainServer ............. 15,312.64ms DONE
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+  2022-12-16 15:52:04 App\Jobs\UpdateMainServer ............. 15,327.89ms DONE
+  2022-12-16 15:52:20 App\Jobs\UpdateMainServer ............. 15,220.84ms DONE
+  2022-12-16 15:54:11 App\Jobs\UpdateMainServer ............. 15,275.31ms DONE
+  2022-12-16 15:54:26 App\Jobs\UpdateMainServer ............. 15,298.06ms DONE
+  2022-12-16 15:56:12 App\Jobs\UpdateMainServer ............. 15,217.95ms DONE
+  2022-12-16 15:56:27 App\Jobs\UpdateMainServer ............. 15,220.64ms DONE
+  2022-12-16 15:56:42 App\Jobs\UpdateMainServer ............. 15,270.25ms DONE
+  2022-12-16 15:58:28 App\Jobs\UpdateMainServer ............. 15,307.45ms DONE
+  2022-12-16 15:58:43 App\Jobs\UpdateMainServer ............. 15,237.33ms DONE
+  2022-12-16 16:00:31 App\Jobs\UpdateMainServer ............. 15,275.36ms DONE
+  2022-12-16 16:00:47 App\Jobs\UpdateMainServer ............. 15,215.05ms DONE
+  2022-12-16 16:01:02 App\Jobs\UpdateMainServer ............. 15,247.71ms DONE
+  2022-12-16 16:02:38 App\Jobs\UpdateMainServer ............. 15,285.59ms DONE
+  2022-12-16 16:02:54 App\Jobs\UpdateMainServer ............. 15,245.31ms DONE
+  2022-12-16 16:06:42 App\Jobs\UpdateMainServer ............. 15,303.63ms DONE
+  2022-12-16 16:06:57 App\Jobs\UpdateMainServer ............. 15,237.07ms DONE
+  2022-12-16 16:08:43 App\Jobs\UpdateMainServer ............. 15,225.24ms DONE
+  2022-12-16 16:08:58 App\Jobs\UpdateMainServer ............. 15,298.81ms DONE
+  2022-12-16 16:09:13 App\Jobs\UpdateMainServer ............. 15,228.42ms DONE
+  2022-12-16 16:09:29 App\Jobs\UpdateMainServer ............. 15,245.47ms DONE
+  2022-12-16 16:10:59 App\Jobs\UpdateMainServer ............. 15,290.98ms DONE
+  2022-12-16 16:13:05 App\Jobs\UpdateMainServer ............. 15,303.84ms DONE
+  2022-12-16 16:13:21 App\Jobs\UpdateMainServer ............. 15,245.98ms DONE
+  2022-12-16 16:15:15 App\Jobs\UpdateMainServer ............. 15,298.60ms DONE
+  2022-12-16 16:17:15 App\Jobs\UpdateMainServer ............. 15,231.55ms DONE
+  2022-12-16 16:17:31 App\Jobs\UpdateMainServer ............. 15,326.32ms DONE
+  2022-12-16 16:17:46 App\Jobs\UpdateMainServer ............. 15,207.52ms DONE
+  2022-12-16 16:18:01 App\Jobs\UpdateMainServer ............. 15,414.91ms DONE
+  2022-12-16 16:19:29 App\Jobs\UpdateMainServer ............. 15,286.24ms DONE
+  2022-12-16 16:19:44 App\Jobs\UpdateMainServer ............. 15,222.29ms DONE
+  2022-12-16 16:21:35 App\Jobs\UpdateMainServer ............. 15,303.69ms DONE
+  2022-12-16 16:21:51 App\Jobs\UpdateMainServer ............. 15,225.76ms DONE
+  2022-12-16 16:23:45 App\Jobs\UpdateMainServer ............. 15,285.66ms DONE
+  2022-12-16 16:25:52 App\Jobs\UpdateMainServer ............. 15,292.60ms DONE
+  2022-12-16 16:26:07 App\Jobs\UpdateMainServer ............. 15,231.31ms DONE
+  2022-12-16 16:26:22 App\Jobs\UpdateMainServer ............. 15,362.62ms DONE
+  2022-12-16 16:26:38 App\Jobs\UpdateMainServer ............. 15,325.72ms DONE
+  2022-12-16 16:29:59 App\Jobs\UpdateMainServer ............. 15,380.09ms DONE
+  2022-12-16 16:30:14 App\Jobs\UpdateMainServer ............. 15,287.39ms DONE
+  2022-12-16 16:32:00 App\Jobs\UpdateMainServer ............. 15,284.38ms DONE
+  2022-12-16 16:32:15 App\Jobs\UpdateMainServer ............. 15,225.55ms DONE
+  2022-12-16 16:34:10 App\Jobs\UpdateMainServer ............. 15,240.25ms DONE
+  2022-12-16 16:34:25 App\Jobs\UpdateMainServer ............. 15,286.53ms DONE
+  2022-12-16 16:34:40 App\Jobs\UpdateMainServer ............. 15,223.79ms DONE
+  2022-12-16 16:36:10 App\Jobs\UpdateMainServer ............. 15,289.55ms DONE
+  2022-12-16 16:36:26 App\Jobs\UpdateMainServer ............. 15,227.87ms DONE
+  2022-12-16 16:36:41 App\Jobs\UpdateMainServer ............. 15,305.05ms DONE
+  2022-12-16 16:36:56 App\Jobs\UpdateMainServer ............. 15,210.25ms DONE
+  2022-12-16 16:40:21 App\Jobs\UpdateMainServer ............. 15,230.75ms DONE
+  2022-12-16 16:40:36 App\Jobs\UpdateMainServer ............. 15,297.43ms DONE
+  2022-12-16 16:42:21 App\Jobs\UpdateMainServer ............. 15,291.05ms DONE
+  2022-12-16 16:42:37 App\Jobs\UpdateMainServer ............. 15,235.98ms DONE
+  2022-12-16 16:42:52 App\Jobs\UpdateMainServer ............. 15,392.46ms DONE
+  2022-12-16 16:44:32 App\Jobs\UpdateMainServer ............. 15,260.98ms DONE
+  2022-12-16 16:44:47 App\Jobs\UpdateMainServer ............. 15,306.89ms DONE
+  2022-12-16 16:46:35 App\Jobs\UpdateMainServer ............. 15,233.71ms DONE
+  2022-12-16 16:46:51 App\Jobs\UpdateMainServer ............. 15,292.36ms DONE
+  2022-12-16 16:48:48 App\Jobs\UpdateMainServer ............. 20,143.63ms DONE
+  2022-12-16 16:49:08 App\Jobs\UpdateMainServer ............. 15,283.30ms DONE
+  2022-12-16 16:50:50 App\Jobs\UpdateMainServer ............. 15,188.21ms DONE
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+  2022-12-16 16:52:56 App\Jobs\UpdateMainServer ............. 15,265.70ms DONE
+  2022-12-16 16:53:11 App\Jobs\UpdateMainServer ............. 15,330.54ms DONE
+  2022-12-16 16:55:02 App\Jobs\UpdateMainServer ............. 15,260.90ms DONE
+  2022-12-16 16:55:18 App\Jobs\UpdateMainServer ............. 15,278.05ms DONE
+  2022-12-16 16:55:33 App\Jobs\UpdateMainServer ............. 15,270.85ms DONE
+  2022-12-16 16:57:12 App\Jobs\UpdateMainServer ............. 15,206.16ms DONE
+  2022-12-16 16:57:28 App\Jobs\UpdateMainServer ............. 15,303.69ms DONE
+  2022-12-16 16:57:43 App\Jobs\UpdateMainServer ............. 15,234.76ms DONE
+  2022-12-16 16:59:13 App\Jobs\UpdateMainServer ............. 15,295.25ms DONE
+  2022-12-16 17:01:20 App\Jobs\UpdateMainServer ............. 15,222.94ms DONE
+  2022-12-16 17:01:35 App\Jobs\UpdateMainServer ............. 15,289.05ms DONE
+  2022-12-16 17:03:20 App\Jobs\UpdateMainServer ............. 15,261.22ms DONE
+  2022-12-16 17:03:39 App\Jobs\UpdateMainServer ............. 15,224.05ms DONE
+  2022-12-16 17:05:24 App\Jobs\UpdateMainServer ............. 15,242.38ms DONE
+  2022-12-16 17:05:39 App\Jobs\UpdateMainServer ............. 15,359.23ms DONE
+  2022-12-16 17:07:25 App\Jobs\UpdateMainServer ............. 15,299.08ms DONE
+  2022-12-16 17:07:46 App\Jobs\UpdateMainServer ............. 15,250.65ms DONE
+  2022-12-16 17:09:25 App\Jobs\UpdateMainServer ............. 15,333.94ms DONE
+  2022-12-16 17:09:47 App\Jobs\UpdateMainServer ............. 15,362.40ms DONE
+  2022-12-16 17:11:29 App\Jobs\UpdateMainServer ............. 15,303.49ms DONE
+  2022-12-16 17:11:45 App\Jobs\UpdateMainServer ............. 15,228.89ms DONE
+  2022-12-16 17:12:00 App\Jobs\UpdateMainServer ............. 15,233.16ms DONE
+  2022-12-16 17:12:15 App\Jobs\UpdateMainServer ............. 15,322.14ms DONE
+  2022-12-16 17:13:46 App\Jobs\UpdateMainServer ............. 15,210.22ms DONE
+  2022-12-16 17:15:55 App\Jobs\UpdateMainServer ............. 15,277.35ms DONE
+  2022-12-16 17:16:10 App\Jobs\UpdateMainServer ............. 15,322.97ms DONE
+  2022-12-16 17:18:08 App\Jobs\UpdateMainServer ............. 15,236.24ms DONE
+  2022-12-16 17:18:26 App\Jobs\UpdateMainServer ............. 15,241.89ms DONE
+  2022-12-16 17:20:08 App\Jobs\UpdateMainServer ............. 15,293.02ms DONE
+  2022-12-16 17:20:24 App\Jobs\UpdateMainServer ............. 15,231.79ms DONE
+  2022-12-16 17:22:18 App\Jobs\UpdateMainServer ............. 15,232.27ms DONE
+  2022-12-16 17:22:33 App\Jobs\UpdateMainServer ............. 15,283.46ms DONE
+  2022-12-16 17:22:49 App\Jobs\UpdateMainServer ............. 15,207.42ms DONE
+  2022-12-16 17:23:04 App\Jobs\UpdateMainServer ............. 15,335.51ms DONE
+  2022-12-16 17:26:19 App\Jobs\UpdateMainServer ............. 16,319.08ms DONE
+  2022-12-16 17:26:36 App\Jobs\UpdateMainServer ............. 15,227.31ms DONE
+  2022-12-16 17:28:24 App\Jobs\UpdateMainServer ............. 15,366.75ms DONE
+  2022-12-16 17:28:42 App\Jobs\UpdateMainServer ............. 15,221.32ms DONE
+  2022-12-16 17:30:43 App\Jobs\UpdateMainServer ............. 15,289.50ms DONE
+  2022-12-16 17:30:58 App\Jobs\UpdateMainServer ............. 15,239.90ms DONE
+  2022-12-16 17:32:49 App\Jobs\UpdateMainServer ............. 15,308.63ms DONE
+  2022-12-16 17:34:44 App\Jobs\UpdateMainServer ............. 15,226.07ms DONE
+  2022-12-16 17:36:50 App\Jobs\UpdateMainServer ............. 20,185.56ms DONE
+  2022-12-16 17:37:10 App\Jobs\UpdateMainServer ............. 15,253.20ms DONE
+  2022-12-16 17:39:02 App\Jobs\UpdateMainServer ............. 15,266.05ms DONE
+  2022-12-16 17:39:17 App\Jobs\UpdateMainServer ............. 15,340.28ms DONE
+  2022-12-16 17:41:06 App\Jobs\UpdateMainServer ............. 15,253.84ms DONE
+  2022-12-16 17:41:21 App\Jobs\UpdateMainServer ............. 15,332.96ms DONE
+  2022-12-16 17:41:36 App\Jobs\UpdateMainServer ............. 15,234.97ms DONE
+  2022-12-16 17:43:28 App\Jobs\UpdateMainServer ............. 15,227.30ms DONE
+  2022-12-16 17:45:28 App\Jobs\UpdateMainServer ............. 15,298.39ms DONE
+  2022-12-16 17:45:43 App\Jobs\UpdateMainServer ............. 15,269.77ms DONE
+  2022-12-16 17:47:11 App\Jobs\UpdateMainServer ............. 15,365.02ms DONE
+  2022-12-16 17:47:26 App\Jobs\UpdateMainServer ............. 15,234.44ms DONE
+  2022-12-16 17:47:41 App\Jobs\UpdateMainServer ............. 15,244.24ms DONE
+  2022-12-16 17:47:57 App\Jobs\UpdateMainServer ............. 15,298.14ms DONE
+  2022-12-16 17:49:27 App\Jobs\UpdateMainServer ............. 15,232.87ms DONE
+  2022-12-16 17:49:42 App\Jobs\UpdateMainServer ............. 15,287.03ms DONE
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   ParseError 
+
+  syntax error, unexpected variable "$client"
+
+  at /var/www/node1/routes/web.php:53
+     49▕         $client->attach(...$file);
+     50▕     }
+     51▕     $client->asMultipart();
+     52▕     $client->withBody()
+  ➜  53▕     $client->contentType('application/x-www-form-urlencoded');
+     54▕     $response = $client->accept('application/json')
+     55▕         ->post($url, $data);
+     56▕     dd($response);
+     57▕     Log::info("arvan responce: " . $response);
+
+      [2m+3 vendor frames [22m
+  4   /var/www/node1/app/Providers/RouteServiceProvider.php:37
+      Illuminate\Routing\RouteRegistrar::group()
+
+      [2m+15 vendor frames [22m
+  20  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+  2022-12-16 17:53:46 App\Jobs\UpdateMainServer ............. 15,298.56ms DONE
+  2022-12-16 17:54:01 App\Jobs\UpdateMainServer ............. 15,255.53ms DONE
+  2022-12-16 17:59:38 App\Jobs\UpdateMainServer ............. 15,235.33ms DONE
+  2022-12-16 17:59:53 App\Jobs\UpdateMainServer ............. 15,311.86ms DONE
+  2022-12-16 18:01:39 App\Jobs\UpdateMainServer ............. 15,279.39ms DONE
+  2022-12-16 18:01:54 App\Jobs\UpdateMainServer ............. 15,235.26ms DONE
+  2022-12-16 18:02:09 App\Jobs\UpdateMainServer ............. 15,277.80ms DONE
+  2022-12-16 18:02:25 App\Jobs\UpdateMainServer ............. 15,235.16ms DONE
+  2022-12-16 18:05:49 App\Jobs\UpdateMainServer ............. 15,225.36ms DONE
+  2022-12-16 18:06:04 App\Jobs\UpdateMainServer ............. 15,319.69ms DONE
+  2022-12-16 18:07:50 App\Jobs\UpdateMainServer ............. 15,313.51ms DONE
+  2022-12-16 18:08:05 App\Jobs\UpdateMainServer ............. 15,302.76ms DONE
+  2022-12-16 18:08:20 App\Jobs\UpdateMainServer ............. 15,329.47ms DONE
+  2022-12-16 18:08:36 App\Jobs\UpdateMainServer ............. 15,263.25ms DONE
+  2022-12-16 18:10:00 App\Jobs\UpdateMainServer ............. 15,232.99ms DONE
+  2022-12-16 18:10:15 App\Jobs\UpdateMainServer ............. 15,314.19ms DONE
+  2022-12-16 18:14:07 App\Jobs\UpdateMainServer ............. 15,308.51ms DONE
+  2022-12-16 18:14:22 App\Jobs\UpdateMainServer ............. 15,223.41ms DONE
+  2022-12-16 18:14:37 App\Jobs\UpdateMainServer ............. 15,301.45ms DONE
+  2022-12-16 18:16:11 App\Jobs\UpdateMainServer ............. 15,288.73ms DONE
+  2022-12-16 18:16:26 App\Jobs\UpdateMainServer ............. 15,262.50ms DONE
+  2022-12-16 18:16:42 App\Jobs\UpdateMainServer ............. 15,294.52ms DONE
+  2022-12-16 18:18:18 App\Jobs\UpdateMainServer ............. 15,283.02ms DONE
+  2022-12-16 18:18:33 App\Jobs\UpdateMainServer ............. 15,231.61ms DONE
+  2022-12-16 18:18:48 App\Jobs\UpdateMainServer ............. 15,255.99ms DONE
+  2022-12-16 18:20:22 App\Jobs\UpdateMainServer ............. 15,335.03ms DONE
+  2022-12-16 18:20:37 App\Jobs\UpdateMainServer ............. 15,287.29ms DONE
+  2022-12-16 18:22:29 App\Jobs\UpdateMainServer ............. 15,328.15ms DONE
+  2022-12-16 18:22:44 App\Jobs\UpdateMainServer ............. 15,261.19ms DONE
+  2022-12-16 18:24:35 App\Jobs\UpdateMainServer ............. 15,303.03ms DONE
+  2022-12-16 18:24:51 App\Jobs\UpdateMainServer ............. 15,237.95ms DONE
+  2022-12-16 18:26:42 App\Jobs\UpdateMainServer ............. 15,280.28ms DONE
+  2022-12-16 18:26:57 App\Jobs\UpdateMainServer ............. 15,233.91ms DONE
+  2022-12-16 18:28:46 App\Jobs\UpdateMainServer ............. 15,319.17ms DONE
+  2022-12-16 18:29:01 App\Jobs\UpdateMainServer ............. 15,406.65ms DONE
+  2022-12-16 18:32:53 App\Jobs\UpdateMainServer ............. 15,308.45ms DONE
+  2022-12-16 18:33:08 App\Jobs\UpdateMainServer ............. 15,224.46ms DONE
+  2022-12-16 18:34:53 App\Jobs\UpdateMainServer ............. 15,334.98ms DONE
+  2022-12-16 18:35:09 App\Jobs\UpdateMainServer ............. 15,293.42ms DONE
+  2022-12-16 18:35:24 App\Jobs\UpdateMainServer ............. 15,232.81ms DONE
+  2022-12-16 18:37:03 App\Jobs\UpdateMainServer ............. 15,280.13ms DONE
+  2022-12-16 18:37:19 App\Jobs\UpdateMainServer ............. 15,244.26ms DONE
+  2022-12-16 18:37:34 App\Jobs\UpdateMainServer ............. 15,289.51ms DONE
+  2022-12-16 18:39:07 App\Jobs\UpdateMainServer ............. 15,270.78ms DONE
+  2022-12-16 18:39:23 App\Jobs\UpdateMainServer ............. 15,324.19ms DONE
+  2022-12-16 18:39:38 App\Jobs\UpdateMainServer ............. 15,228.36ms DONE
+  2022-12-16 18:41:20 App\Jobs\UpdateMainServer ............. 15,300.81ms DONE
+  2022-12-16 18:43:30 App\Jobs\UpdateMainServer ............. 15,321.08ms DONE
+  2022-12-16 18:43:45 App\Jobs\UpdateMainServer ............. 15,245.66ms DONE
+  2022-12-16 18:44:00 App\Jobs\UpdateMainServer ............. 15,286.01ms DONE
+  2022-12-16 18:44:16 App\Jobs\UpdateMainServer ............. 15,221.79ms DONE
+  2022-12-16 18:45:34 App\Jobs\UpdateMainServer ............. 15,291.64ms DONE
+  2022-12-16 18:47:40 App\Jobs\UpdateMainServer ............. 15,300.67ms DONE
+  2022-12-16 18:47:56 App\Jobs\UpdateMainServer ............. 15,221.15ms DONE
+  2022-12-16 18:49:44 App\Jobs\UpdateMainServer ............. 15,263.07ms DONE
+  2022-12-16 18:49:59 App\Jobs\UpdateMainServer ............. 15,311.78ms DONE
+  2022-12-16 18:50:15 App\Jobs\UpdateMainServer ............. 15,232.67ms DONE
+  2022-12-16 18:51:03 App\Jobs\UpdateMainServer ............. 15,266.57ms DONE
+  2022-12-16 18:51:51 App\Jobs\UpdateMainServer ............. 15,372.40ms DONE
+  2022-12-16 18:52:07 App\Jobs\UpdateMainServer ............. 15,224.42ms DONE
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+  2022-12-16 18:55:58 App\Jobs\UpdateMainServer ............. 16,328.23ms DONE
+  2022-12-16 18:56:14 App\Jobs\UpdateMainServer ............. 15,234.61ms DONE
+  2022-12-16 18:57:02 App\Jobs\UpdateMainServer ............. 15,340.47ms DONE
+  2022-12-16 18:57:57 App\Jobs\UpdateMainServer ............. 15,238.86ms DONE
+  2022-12-16 18:58:18 App\Jobs\UpdateMainServer ............. 15,297.81ms DONE
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+  2022-12-16 18:59:02 App\Jobs\SendIntoStreamProvider .......... 188.03ms FAIL
+  2022-12-16 18:59:02 App\Jobs\SendIntoStreamProvider .......... 103.45ms FAIL
+  2022-12-16 18:59:02 App\Jobs\SendIntoStreamProvider ........... 78.46ms FAIL
+  2022-12-16 18:59:02 App\Jobs\SendIntoStreamProvider ........... 74.94ms FAIL
+  2022-12-16 18:59:02 App\Jobs\SendIntoStreamProvider ........... 74.88ms FAIL
+  2022-12-16 18:59:03 App\Jobs\SendIntoStreamProvider .......... 160.60ms FAIL
+  2022-12-16 18:59:03 App\Jobs\SendIntoStreamProvider ........... 89.01ms FAIL
+  2022-12-16 18:59:03 App\Jobs\SendIntoStreamProvider ........... 99.67ms FAIL
+  2022-12-16 18:59:03 App\Jobs\SendIntoStreamProvider .......... 152.70ms FAIL
+  2022-12-16 18:59:03 App\Jobs\SendIntoStreamProvider ........... 89.95ms FAIL
+  2022-12-16 18:59:03 App\Jobs\SendIntoStreamProvider ........... 93.02ms FAIL
+  2022-12-16 18:59:04 App\Jobs\SendIntoStreamProvider ........... 86.81ms FAIL
+  2022-12-16 18:59:05 App\Jobs\UpdateMainServer ............. 15,951.70ms DONE
+  2022-12-16 19:01:49 App\Jobs\SendIntoStreamProvider ........... 91.66ms FAIL
+  2022-12-16 19:01:49 App\Jobs\SendIntoStreamProvider ........... 78.44ms FAIL
+  2022-12-16 19:01:49 App\Jobs\SendIntoStreamProvider ........... 69.83ms FAIL
+  2022-12-16 19:02:03 App\Jobs\UpdateMainServer ............. 15,305.02ms DONE
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+  2022-12-16 19:03:29 App\Jobs\SendIntoStreamProvider .......... 227.69ms FAIL
+  2022-12-16 19:03:29 App\Jobs\SendIntoStreamProvider .......... 107.60ms FAIL
+  2022-12-16 19:03:29 App\Jobs\SendIntoStreamProvider .......... 104.67ms FAIL
+  2022-12-16 19:04:05 App\Jobs\UpdateMainServer ............. 15,131.75ms DONE
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+PHP Deprecated:  Optional parameter $need_download declared before required parameter $watermark_url is implicitly treated as a required parameter in /var/www/node1/app/Jobs/SendIntoStreamProvider.php on line 36
+  2022-12-16 19:07:09 App\Jobs\SendIntoStreamProvider ........ 6,477.35ms FAIL
+  2022-12-16 19:07:09 App\Jobs\SendIntoStreamProvider ........ 6,575.40ms DONE
+  2022-12-16 19:07:18 App\Jobs\UpdateMainServer ............. 15,312.15ms DONE
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+PHP Deprecated:  Optional parameter $need_download declared before required parameter $watermark_url is implicitly treated as a required parameter in /var/www/node1/app/Jobs/SendIntoStreamProvider.php on line 36
+  2022-12-17 20:01:57 App\Jobs\SendIntoStreamProvider ........ 3,411.55ms FAIL
+  2022-12-17 20:01:57 App\Jobs\SendIntoStreamProvider ........ 3,521.93ms DONE
+  2022-12-17 20:02:02 App\Jobs\UpdateMainServer ............. 15,357.82ms DONE
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+  2022-12-17 20:08:47 App\Jobs\SendIntoStreamProvider  2022-12-17 20:09:08 App\Jobs\UpdateMainServer ............. 15,332.92ms DONE
+
+   INFO  Processing jobs from the [default] queue.  
+
+  2022-12-17 20:16:32 App\Jobs\SendIntoStreamProvider  2022-12-17 20:17:03 App\Jobs\UpdateMainServer ....... 31,723.10ms DONE
+ ............. 15,682.05ms DONE
+  2022-12-17 20:17:18 App\Jobs\UpdateMainServer ............. 15,180.58ms DONE
+  2022-12-17 20:18:37 App\Jobs\SendIntoStreamProvider .......... 813.41ms DONE
+  2022-12-17 20:18:40 App\Jobs\UpdateMainServer ............. 20,300.48ms DONE
+  2022-12-17 20:24:09 App\Jobs\UpdateMainServer ............. 15,291.35ms DONE
+  2022-12-17 20:24:25 App\Jobs\UpdateMainServer ............. 15,456.12ms DONE
+  2022-12-17 20:24:40 App\Jobs\UpdateMainServer ............. 15,306.40ms DONE
+  2022-12-17 20:26:20 App\Jobs\UpdateMainServer ............. 15,654.77ms DONE
+  2022-12-17 20:26:35 App\Jobs\UpdateMainServer ............. 15,285.43ms DONE
+  2022-12-17 20:26:51 App\Jobs\UpdateMainServer ............. 15,387.06ms DONE
+  2022-12-17 20:27:06 App\Jobs\UpdateMainServer ............. 20,201.45ms DONE
+  2022-12-17 20:27:26 App\Jobs\UpdateMainServer ............. 15,311.88ms DONE
+  2022-12-17 20:28:36 App\Jobs\UpdateMainServer ............. 15,277.67ms DONE
+  2022-12-17 20:28:51 App\Jobs\UpdateMainServer ............. 15,548.49ms DONE
+  2022-12-17 20:30:34 App\Jobs\UpdateMainServer ............. 15,427.46ms DONE
+  2022-12-17 20:30:49 App\Jobs\UpdateMainServer ............. 15,327.13ms DONE
+  2022-12-17 20:31:04 App\Jobs\UpdateMainServer ............. 15,490.08ms DONE
+  2022-12-17 20:31:20 App\Jobs\UpdateMainServer ............. 15,297.78ms DONE
+  2022-12-17 20:31:35 App\Jobs\UpdateMainServer ............. 15,611.64ms DONE
+  2022-12-17 20:31:51 App\Jobs\UpdateMainServer ............. 15,282.35ms DONE
+  2022-12-17 20:32:38 App\Jobs\SendIntoStreamProvider .......... 795.54ms DONE
+  2022-12-17 20:32:39 App\Jobs\UpdateMainServer ............. 15,595.24ms DONE
+  2022-12-17 20:32:55 App\Jobs\UpdateMainServer ............. 15,277.62ms DONE
+  2022-12-17 20:33:10 App\Jobs\UpdateMainServer ............. 15,734.57ms DONE
+  2022-12-17 20:33:26 App\Jobs\UpdateMainServer ............. 15,295.87ms DONE
+  2022-12-17 20:34:44 App\Jobs\UpdateMainServer ............. 15,287.77ms DONE
+  2022-12-17 20:35:00 App\Jobs\UpdateMainServer ............. 15,511.43ms DONE
+  2022-12-17 20:35:15 App\Jobs\UpdateMainServer ............. 15,279.01ms DONE
+  2022-12-17 20:35:31 App\Jobs\UpdateMainServer ............. 15,259.41ms DONE
+  2022-12-17 20:36:49 App\Jobs\UpdateMainServer ............. 15,248.43ms DONE
+  2022-12-17 20:37:07 App\Jobs\UpdateMainServer ............. 15,278.41ms DONE
+  2022-12-17 20:38:50 App\Jobs\UpdateMainServer ............. 15,378.02ms DONE
+  2022-12-17 20:39:05 App\Jobs\UpdateMainServer ............. 15,291.08ms DONE
+  2022-12-17 20:39:20 App\Jobs\UpdateMainServer ............. 15,377.02ms DONE
+  2022-12-17 20:39:36 App\Jobs\UpdateMainServer ............. 15,273.22ms DONE
+  2022-12-17 20:39:51 App\Jobs\UpdateMainServer ............. 15,374.16ms DONE
+  2022-12-17 20:40:07 App\Jobs\UpdateMainServer ............. 15,282.57ms DONE
+  2022-12-17 20:40:22 App\Jobs\UpdateMainServer ............. 15,298.73ms DONE
+  2022-12-17 20:40:37 App\Jobs\UpdateMainServer ............. 15,216.19ms DONE
+  2022-12-17 20:40:52 App\Jobs\UpdateMainServer  2022-12-17 20:41:07 App\Jobs\DownloadWithXargsstring(6) "setp 1"
+string(36) "f7cda6f5-60e2-4e76-b8c5-9f64c26127e2"
+ ............. 15,267.22ms DONE
+string(6) "step 2"
+string(21) "/var/www/node1/public"
+  2022-12-17 20:41:08 App\Jobs\UpdateMainServerstring(12) "exit code: 0"
+ ............. 2,776.70ms DONE
+  2022-12-17 20:41:09 App\Jobs\DownloadWithXargsstring(6) "setp 1"
+string(36) "f7cda6f5-60e2-4e76-b8c5-9f64c26127e2"
+string(6) "step 2"
+string(21) "/var/www/node1/public"
+string(12) "exit code: 0"
+ ............. 2,694.71ms DONE
+  2022-12-17 20:41:12 App\Jobs\DownloadWithXargsstring(6) "setp 1"
+string(36) "f7cda6f5-60e2-4e76-b8c5-9f64c26127e2"
+string(6) "step 2"
+string(21) "/var/www/node1/public"
+string(12) "exit code: 0"
+ ............. 3,721.31ms DONE
+ ............. 15,275.42ms DONE
+  2022-12-17 20:41:23 App\Jobs\UpdateMainServer  2022-12-17 20:41:25 App\Jobs\UploadWiths5cmdstring(58) "/var/www/node1/public/f7cda6f5-60e2-4e76-b8c5-9f64c26127e2"
+ ............... 4,663.83ms DONE
+  2022-12-17 20:41:30 App\Jobs\UploadWiths5cmdstring(58) "/var/www/node1/public/f7cda6f5-60e2-4e76-b8c5-9f64c26127e2"
+ ................. 133.47ms FAIL
+  2022-12-17 20:41:33 App\Jobs\UploadWiths5cmdstring(58) "/var/www/node1/public/f7cda6f5-60e2-4e76-b8c5-9f64c26127e2"
+ ................. 108.81ms FAIL
+ ............. 15,304.49ms DONE
+  2022-12-17 20:41:38 App\Jobs\UpdateMainServer ............. 15,562.91ms DONE
+  2022-12-17 20:41:54 App\Jobs\UpdateMainServer ............. 15,308.95ms DONE
+  2022-12-17 20:43:00 App\Jobs\UpdateMainServer ............. 15,210.61ms DONE
+  2022-12-17 20:43:16 App\Jobs\UpdateMainServer ............. 15,280.53ms DONE
+  2022-12-17 20:43:31 App\Jobs\UpdateMainServer ............. 15,268.17ms DONE
+  2022-12-17 20:43:46 App\Jobs\UpdateMainServer ............. 15,313.12ms DONE
+  2022-12-17 20:45:05 App\Jobs\UpdateMainServer ............. 15,426.25ms DONE
+  2022-12-17 20:45:20 App\Jobs\UpdateMainServer ............. 15,289.15ms DONE
+  2022-12-17 20:45:35 App\Jobs\UpdateMainServer ............. 15,183.02ms DONE
+  2022-12-17 20:45:51 App\Jobs\UpdateMainServer ............. 15,291.44ms DONE
+  2022-12-17 20:46:06 App\Jobs\UpdateMainServer ............. 15,276.73ms DONE
+  2022-12-17 20:47:12 App\Jobs\UpdateMainServer ............. 15,254.04ms DONE
+  2022-12-17 20:47:28 App\Jobs\UpdateMainServer ............. 15,289.93ms DONE
+  2022-12-17 20:47:43 App\Jobs\UpdateMainServer ............. 15,401.90ms DONE
+  2022-12-17 20:47:58 App\Jobs\UpdateMainServer ............. 15,300.38ms DONE
+  2022-12-17 20:49:20 App\Jobs\UpdateMainServer ............. 15,314.78ms DONE
+  2022-12-17 20:51:41 App\Jobs\UpdateMainServer ............. 15,288.29ms DONE
+  2022-12-17 20:57:33 App\Jobs\UpdateMainServer ............. 15,289.96ms DONE
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+  2022-12-19 18:55:28 App\Jobs\UpdateMainServer ............. 15,416.40ms DONE
+  2022-12-19 18:56:04 App\Jobs\UpdateMainServer ............. 15,124.71ms DONE
+  2022-12-19 19:10:38 App\Jobs\UpdateMainServer ............. 15,301.86ms DONE
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+PHP Deprecated:  Optional parameter $need_download declared before required parameter $watermark_url is implicitly treated as a required parameter in /var/www/node1/app/Jobs/SendIntoStreamProvider.php on line 36
+  2023-01-07 21:37:25 App\Jobs\SendIntoStreamProvider ........ 1,644.60ms FAIL
+  2023-01-07 21:37:25 App\Jobs\SendIntoStreamProvider ........ 1,736.10ms DONE
+  2023-01-07 21:37:29 App\Jobs\UpdateMainServer ............. 15,496.09ms DONE
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+PHP Deprecated:  Optional parameter $need_download declared before required parameter $watermark_url is implicitly treated as a required parameter in /var/www/node1/app/Jobs/SendIntoStreamProvider.php on line 36
+  2023-01-10 20:45:15 App\Jobs\SendIntoStreamProvider ....... 23,766.33ms FAIL
+  2023-01-10 20:45:15 App\Jobs\SendIntoStreamProvider ....... 23,865.62ms DONE
+  2023-01-10 20:45:39 App\Jobs\UpdateMainServer ............. 15,401.74ms DONE
+
+   INFO  Processing jobs from the [main_server_updater] queue.  
+
+
+   INFO  Processing jobs from the [default] queue.  
+
+PHP Deprecated:  Optional parameter $need_download declared before required parameter $watermark_url is implicitly treated as a required parameter in /var/www/node1/app/Jobs/SendIntoStreamProvider.php on line 36
+  2023-01-10 20:55:23 App\Jobs\SendIntoStreamProvider ........ 3,343.44ms FAIL
+  2023-01-10 20:55:23 App\Jobs\SendIntoStreamProvider ........ 3,444.77ms DONE
+  2023-01-10 20:55:29 App\Jobs\UpdateMainServer ............. 16,001.10ms DONE

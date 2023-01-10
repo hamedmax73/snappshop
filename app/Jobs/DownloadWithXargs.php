@@ -55,13 +55,14 @@ class DownloadWithXargs implements ShouldQueue
         $duploadService = new DuploadService();
         $this->queueProgress(0);
         $source_video_id = $this->transcode->source_video_id;
-        var_dump('setp 1');
+        var_dump('setp 1: save urls into disk');
         $user_id = $this->transcode->user_id;
         $result = $duploadService->saveInDisk($this->transcode, $source_video_id, $user_id);
-        var_dump('step 2');
+        var_dump('step 2: download files');
         $this->queueProgress(50);
         if ($result) {
             $result = $duploadService->downloadFiles($user_id);
+            var_dump('step 3: upload files runs after 15 sec ');
             UploadWiths5cmd::dispatch($this->transcode)->delay(Carbon::now()->addSeconds(15));
             $this->queueProgress(100);
             return true;

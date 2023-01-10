@@ -17,6 +17,7 @@ class Transcode extends Model
         'cover_time',
         'status',
         'channel_id',
+        'channel_token',
         'check_try',
         'tooltip_url',
         'thumbnail_url',
